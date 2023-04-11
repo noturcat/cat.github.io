@@ -23,7 +23,7 @@
         rel="stylesheet"
         href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
         />
-
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 <style>
 body{
@@ -661,6 +661,14 @@ transform: scale(0.95);
 .linkedin:hover {
   background-size: 0 3px, 100% 3px;
 }
+@media screen and (max-width: 769px) {
+  .home img{
+    display: none;
+  }
+  .resume img{
+    display: none;
+  }
+}
     </style>
     </head>
 <div class="preloader">
@@ -726,7 +734,7 @@ transform: scale(0.95);
                     a Web Developer. <br>
                     I created this site for my portfolio. 
                 </h2>
-                <button class="contact" id="email">
+                <button class="contact" id="email" >
                     <div class="svg-wrapper-1">
                         <div class="svg-wrapper">
                             <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -739,11 +747,11 @@ transform: scale(0.95);
                 </button>
                 
                 <a href="https://www.linkedin.com/in/chezter-custodio-b02a1b220/" target="_blank" class="linkedin">
-                    <img src="('images/linkedin.svg')" alt="" class="img-fluid" width="100" height="100">
+                    <img src="images/linkedin.svg" alt="" class="img-fluid" width="100" height="100">
                 </a>
             </div>
             <div class="circle">
-                <img src="('images/meh.jpg')" alt="" class="img-fluid home-img" width="350" height="350"/>
+                <img src="images/meh.jpg" alt="" class="img-fluid home-img" width="350" height="350"/>
             </div>
         </div>
     </div>
@@ -757,7 +765,7 @@ transform: scale(0.95);
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
                     <div class="card">
-                        <div class="card-image"><img src="('images/AnimeList.png')" alt="" class="img-fluid" ></div>
+                        <div class="card-image"><img src="images/AnimeList.png" alt="" class="img-fluid" ></div>
                         <div class="title d-flex justify-content-center"> MY ANIMELIST </div>
                         <div class="category"> Skills used </div>
                         <div class="heading"> Laravel, HTML, CSS, JavaScript, PHP, Bootstrap</div>
@@ -771,7 +779,7 @@ transform: scale(0.95);
                 </div>
                 <div class="swiper-slide">
                     <div class="card">
-                        <div class="card-image d-flex justify-content-center align-items-center"><img src="('images/BuyNSellLogo.png')" alt="" class="img-fluid "></div>
+                        <div class="card-image d-flex justify-content-center align-items-center"><img src="images/BuyNSellLogo.png" alt="" class="img-fluid "></div>
                         <div class="title d-flex justify-content-center"> Buy n' Sell </div>
                         <div class="category"> Skills used </div>
                         <div class="heading"> Laravel, HTML, CSS, JavaScript, Bootstrap, GIT </div>
@@ -784,7 +792,7 @@ transform: scale(0.95);
                 </div>
                 <div class="swiper-slide">
                     <div class="card">
-                        <div class="card-image d-flex justify-content-center align-items-center"><img src="('images/.png')" alt="" class="img-fluid"></div>
+                        <div class="card-image d-flex justify-content-center align-items-center"><img src="images/.png" alt="" class="img-fluid"></div>
                         <div class="title d-flex justify-content-center"> Runnit</div>
                         <div class="category"> Skills used </div>
                         <div class="heading"> Laravel, HTML, CSS, JavaScript, Bootstrap, GIT </div>
@@ -797,7 +805,7 @@ transform: scale(0.95);
                 </div>
                 <div class="swiper-slide">
                     <div class="card">
-                        <div class="card-image"><img src="('images/ral_logo.png')" alt="" class="img-fluid"></div>
+                        <div class="card-image"><img src="images/ral_logo.png" alt="" class="img-fluid"></div>
                         <div class="title d-flex justify-content-center align-items-center"> Rent-a-live </div>
                         <div class="category"> Skills used </div>
                         <div class="heading"> Laravel, HTML, CSS, JavaScript, PHP, Bootstrap </div>
@@ -810,7 +818,7 @@ transform: scale(0.95);
                 </div>
                 <div class="swiper-slide">
                     <div class="card">
-                        <div class="card-image d-flex justify-content-center align-items-center"><img src="('images/INVISIBI.png')" alt="" class="img-fluid"></div>
+                        <div class="card-image d-flex justify-content-center align-items-center"><img src="images/INVISIBI.png" alt="" class="img-fluid"></div>
                         <div class="title d-flex justify-content-center"> INVISIBLE </div>
                         <div class="category"> Skills used </div>
                         <div class="heading"> CodeIgniter, HTML, CSS, JavaScript, PHP, Bootstrap </div>
@@ -823,7 +831,7 @@ transform: scale(0.95);
                 </div>
                 <div class="swiper-slide">
                     <div class="card">
-                        <div class="card-image d-flex justify-content-center align-items-center"><img src="('images/peteat_logo.png')" alt="" class="img-fluid"></div>
+                        <div class="card-image d-flex justify-content-center align-items-center"><img src="images/peteat_logo.png" alt="" class="img-fluid"></div>
                         <div class="title d-flex justify-content-center"> peTEAt: MilkTea Website </div>
                         <div class="category"> Skills used </div>
                         <div class="heading"> HTML, CSS, JavaScript, PHP, Bootstrap </div>
@@ -836,7 +844,7 @@ transform: scale(0.95);
                 </div>
                 <div class="swiper-slide">
                     <div class="card">
-                        <div class="card-image"><img src="('images/flix_logo.png')" alt="" class="img-fluid"></div>
+                        <div class="card-image"><img src="images/flix_logo.png" alt="" class="img-fluid"></div>
                         <div class="title d-flex justify-content-center"> FLIX </div>
                         <div class="category"> Skills used </div>
                         <div class="heading"> Kotlin, Android Studio, Firebase </div>
@@ -861,7 +869,7 @@ transform: scale(0.95);
     </div>
     <div data-aos="fade-up" id="" class="height home ">
         <div class="m-5 d-flex align-items-start justify-content-around">
-            <img src="('images/creative_shot.jpg')" alt="" class="img-fluid" width="250" height="250">
+            <img src="images/creative_shot.jpg" alt="" class="img-fluid" width="250" height="250">
             <div class="d-flex flex-column m-5">
                 <h3>I am 23 years old fresh graduate from FEU Institute of Technology. I came from Pasig City and moved to Muntinlupa at 2018.
                 I started programming on 2017, I just want to explore it and it became my interest and thats how my career started as a Web Developer.
@@ -879,27 +887,27 @@ transform: scale(0.95);
                 <h1>Front End Development</h1>
                 <div class="d-flex flex-wrap justify-content-center">
                     <div>
-                        <img src="('images/skills/css3_logo.svg')" alt="" class="img-fluid" >
+                        <img src="images/skills/css3_logo.svg" alt="" class="img-fluid" >
                         <h4>5 yrs</h4>
                     </div>
                     <div>
-                        <img src="('images/skills/html5_logo.svg')" alt="" class="img-fluid" >
+                        <img src="images/skills/html5_logo.svg" alt="" class="img-fluid" >
                         <h4>5yrs</h4>
                     </div>
                     <div>
-                        <img src="('images/skills/javascript_logo.svg')" alt="" class="img-fluid" >
+                        <img src="images/skills/javascript_logo.svg" alt="" class="img-fluid" >
                         <h4>3 yrs</h4>
                     </div>
                     <div>
-                        <img src="('images/skills/bootstrap_logo.svg')" alt="" class="img-fluid" >
+                        <img src="images/skills/bootstrap_logo.svg" alt="" class="img-fluid" >
                         <h4>5 yrs</h4>
                     </div>
                     <div>
-                        <img src="('images/skills/kotlin_logo.svg')" alt="" class="img-fluid" >
+                        <img src="images/skills/kotlin_logo.svg" alt="" class="img-fluid" >
                         <h4>&lt;1 yr</h4>
                     </div>
                     <div>
-                        <img src="('images/skills/swift_logo.svg')" alt="" class="img-fluid" >
+                        <img src="images/skills/swift_logo.svg" alt="" class="img-fluid" >
                         <h4>&lt;1 yr</h4>
                     </div>
                     
@@ -910,23 +918,23 @@ transform: scale(0.95);
                 <h1>Back End Development</h1>
                 <div class="d-flex flex-wrap justify-content-center">
                     <div>
-                        <img src="('images/skills/php_logo.svg')" alt="" class="img-fluid" >
+                        <img src="images/skills/php_logo.svg" alt="" class="img-fluid" >
                         <h4>2 yrs</h4>
                     </div>
                     <div>
-                        <img src="('images/skills/laravel_logo.svg')" alt="" class="img-fluid" >
+                        <img src="images/skills/laravel_logo.svg" alt="" class="img-fluid" >
                         <h4>1 yr</h4>
                     </div>
                     <div>
-                        <img src="('images/skills/codeigniter_logo.svg')" alt="" class="img-fluid" >
+                        <img src="images/skills/codeigniter_logo.svg" alt="" class="img-fluid" >
                         <h4>&lt;1 yr</h4>
                     </div>
                     <div>
-                        <img src="('images/skills/mysql_logo.svg')" alt="" class="img-fluid" >
+                        <img src="images/skills/mysql_logo.svg" alt="" class="img-fluid" >
                         <h4>2 yrs</h4>
                     </div>
                     <div>
-                        <img src="('images/skills/firebase_logo.svg')" alt="" class="img-fluid" >
+                        <img src="images/skills/firebase_logo.svg" alt="" class="img-fluid" >
                         <h4>&lt;1 yr</h4>
                     </div>
                 </div>
@@ -935,23 +943,23 @@ transform: scale(0.95);
                 <h1>Other SKills</h1>
                 <div class="d-flex flex-wrap justify-content-center">
                     <div>
-                        <img src="('images/skills/git_logo.svg')" alt="" class="img-fluid" >
+                        <img src="images/skills/git_logo.svg" alt="" class="img-fluid" >
                         <h4>&lt;1 yr</h4>
                     </div>
                     <div>
-                        <img src="('images/skills/photoshop_logo.svg')" alt="" class="img-fluid" >
+                        <img src="images/skills/photoshop_logo.svg" alt="" class="img-fluid" >
                         <h4>2 yrs</h4>
                     </div>
                     <div>
-                        <img src="('images/skills/filmora_logo.svg')" alt="" class="img-fluid" >
+                        <img src="images/skills/filmora_logo.svg" alt="" class="img-fluid" >
                         <h4>3 yrs</h4>
                     </div>
                     <div>
-                        <img src="('images/skills/figma_logo.svg')" alt="" class="img-fluid" >
+                        <img src="images/skills/figma_logo.svg" alt="" class="img-fluid" >
                         <h4>&lt;1 yr</h4>
                     </div>
                     <div>
-                        <img src="('images/skills/Android_Studio_logo.png')" alt="" class="img-fluid" >
+                        <img src="images/skills/Android_Studio_logo.png" alt="" class="img-fluid" >
                         <h4>1 yr</h4>
                     </div>
                 </div>
@@ -968,7 +976,7 @@ transform: scale(0.95);
                     <div>
                         
                         <a href="https://www.credly.com/badges/d12bbe86-ef2f-472b-b371-5d77c3acf68b/linked_in_profile" target="_blank">
-                            <img src="('images/certif/html5_certif.png')" alt="" class="img-fluid" >
+                            <img src="images/certif/html5_certif.png" alt="" class="img-fluid" >
                         </a>
                     </div>
                 </div>
@@ -977,7 +985,7 @@ transform: scale(0.95);
                 <div class="">
                     <div>
                         <a href="https://www.credly.com/badges/3f36792f-9220-4010-8258-0e24eb0f2693/linked_in_profile" target="_blank">
-                            <img src="('images/certif/db_certif.png')" alt="" class="img-fluid" >
+                            <img src="images/certif/db_certif.png" alt="" class="img-fluid" >
                         </a>
                     </div>
                 </div>
@@ -988,9 +996,9 @@ transform: scale(0.95);
         <div data-aos="fade-right" id="resume" >
             <h1>Resume</h1>
         </div>
-        <div data-aos="fade-up" id="" class=" Resume d-flex flex-column justify-content-center height">
+        <div data-aos="fade-up" id="" class=" resume d-flex flex-column justify-content-center height">
             <div class="m-5 d-flex align-items-start ">
-                <img src="('images/grad_pic.jpg')" alt="" class="img-fluid" width="250" height="250">
+                <img src="images/grad_pic.jpg" alt="" class="img-fluid" width="250" height="250">
                 <div class="ms-5">
                     <h3>Chezter Andrei L. Custodio</h3>
                     <h3>BS Information Technology</h3>
@@ -1085,7 +1093,7 @@ transform: scale(0.95);
         <!--Header-->
             <div class="modal-header d-flex justify-content-around">
                 <div class="img-cont">
-                        <img src="('images/AnimeList.png') " alt="" class="img-fluid" width="250" height="250" >
+                        <img src="images/AnimeList.png " alt="" class="img-fluid" width="250" height="250" >
                     </div>
                 <p class="heading">
                     <h4>My Animelist</h4>
@@ -1111,27 +1119,27 @@ transform: scale(0.95);
                         </div>
                         <div class="swiper-slide">
                             <div class="">
-                                <div class="card-image d-flex justify-content-center align-items-center"><img src="('images/modal/Screenshot_204.png')" alt="" class="img-fluid"></div>
+                                <div class="card-image d-flex justify-content-center align-items-center"><img src="images/modal/Screenshot_204.png" alt="" class="img-fluid"></div>
                             </div>
                         </div>
                         <div class="swiper-slide">
                             <div class="">
-                                <div class="card-image d-flex justify-content-center align-items-center"><img src="('images/modal/Screenshot_205.png')" alt="" class="img-fluid"></div>
+                                <div class="card-image d-flex justify-content-center align-items-center"><img src="images/modal/Screenshot_205.png" alt="" class="img-fluid"></div>
                             </div>
                         </div>
                         <div class="swiper-slide">
                             <div class="">
-                                <div class="card-image d-flex justify-content-center align-items-center"><img src="('images/modal/Screenshot_206.png')" alt="" class="img-fluid"></div>
+                                <div class="card-image d-flex justify-content-center align-items-center"><img src="images/modal/Screenshot_206.png" alt="" class="img-fluid"></div>
                             </div>
                         </div>
                         <div class="swiper-slide">
                             <div class="">
-                                <div class="card-image d-flex justify-content-center align-items-center"><img src="('images/modal/Screenshot_219.png')" alt="" class="img-fluid"></div>
+                                <div class="card-image d-flex justify-content-center align-items-center"><img src="images/modal/Screenshot_219.png" alt="" class="img-fluid"></div>
                             </div>
                         </div>
                         <div class="swiper-slide">
                             <div class="">
-                                <div class="card-image d-flex justify-content-center align-items-center"><img src="('images/modal/Screenshot_220.png')" alt="" class="img-fluid"></div>
+                                <div class="card-image d-flex justify-content-center align-items-center"><img src="images/modal/Screenshot_220.png" alt="" class="img-fluid"></div>
                             </div>
                         </div>
                     </div>
@@ -1149,7 +1157,7 @@ transform: scale(0.95);
         <!--Header-->
             <div class="modal-header d-flex justify-content-between">
                     <div class="img-cont">
-                        <img src="('images/BuyNSellLogo.png') " alt="" class="img-fluid" width="250" height="250" >
+                        <img src="images/BuyNSellLogo.png " alt="" class="img-fluid" width="250" height="250" >
                     </div>
                 <p class="heading ">
                     <h4>Buy N' Sell</h4></p>
@@ -1174,22 +1182,22 @@ transform: scale(0.95);
                         </div>
                         <div class="swiper-slide">
                             <div class="">
-                                <div class="card-image d-flex justify-content-center align-items-center"><img src="('images/modal/Screenshot_210.png')" alt="" class="img-fluid"></div>
+                                <div class="card-image d-flex justify-content-center align-items-center"><img src="images/modal/Screenshot_210.png" alt="" class="img-fluid"></div>
                             </div>
                         </div>
                         <div class="swiper-slide">
                             <div class="">
-                                <div class="card-image d-flex justify-content-center align-items-center"><img src="('images/modal/Screenshot_211.png')" alt="" class="img-fluid"></div>
+                                <div class="card-image d-flex justify-content-center align-items-center"><img src="images/modal/Screenshot_211.png" alt="" class="img-fluid"></div>
                             </div>
                         </div>
                         <div class="swiper-slide">
                             <div class="">
-                                <div class="card-image d-flex justify-content-center align-items-center"><img src="('images/modal/Screenshot_212.png')" alt="" class="img-fluid"></div>
+                                <div class="card-image d-flex justify-content-center align-items-center"><img src="images/modal/Screenshot_212.png" alt="" class="img-fluid"></div>
                             </div>
                         </div>
                         <div class="swiper-slide">
                             <div class="">
-                                <div class="card-image d-flex justify-content-center align-items-center"><img src="('images/modal/Screenshot_213.png')" alt="" class="img-fluid"></div>
+                                <div class="card-image d-flex justify-content-center align-items-center"><img src="images/modal/Screenshot_213.png" alt="" class="img-fluid"></div>
                             </div>
                         </div>
                     </div>
@@ -1207,7 +1215,7 @@ transform: scale(0.95);
         <!--Header-->
             <div class="modal-header d-flex justify-content-between">
                     <div class="img-cont">
-                        <img src="('images/BuyNSellLogo.png') " alt="" class="img-fluid" width="250" height="250" >
+                        <img src="images/BuyNSellLogo.png " alt="" class="img-fluid" width="250" height="250" >
                     </div>
                 <p class="heading ">
                     <h4>Runnit</h4></p>
@@ -1232,22 +1240,22 @@ transform: scale(0.95);
                         </div>
                         <div class="swiper-slide">
                             <div class="">
-                                <div class="card-image d-flex justify-content-center align-items-center"><img src="('images/modal/Screenshot_214.png')" alt="" class="img-fluid"></div>
+                                <div class="card-image d-flex justify-content-center align-items-center"><img src="images/modal/Screenshot_214.png" alt="" class="img-fluid"></div>
                             </div>
                         </div>
                         <div class="swiper-slide">
                             <div class="">
-                                <div class="card-image d-flex justify-content-center align-items-center"><img src="('images/modal/Screenshot_215.png')" alt="" class="img-fluid"></div>
+                                <div class="card-image d-flex justify-content-center align-items-center"><img src="images/modal/Screenshot_215.png" alt="" class="img-fluid"></div>
                             </div>
                         </div>
                         <div class="swiper-slide">
                             <div class="">
-                                <div class="card-image d-flex justify-content-center align-items-center"><img src="('images/modal/Screenshot_216.png')" alt="" class="img-fluid"></div>
+                                <div class="card-image d-flex justify-content-center align-items-center"><img src="images/modal/Screenshot_216.png" alt="" class="img-fluid"></div>
                             </div>
                         </div>
                         <div class="swiper-slide">
                             <div class="">
-                                <div class="card-image d-flex justify-content-center align-items-center"><img src="('images/modal/Screenshot_217.png')" alt="" class="img-fluid"></div>
+                                <div class="card-image d-flex justify-content-center align-items-center"><img src="images/modal/Screenshot_217.png" alt="" class="img-fluid"></div>
                             </div>
                         </div>
                     </div>
@@ -1265,7 +1273,7 @@ transform: scale(0.95);
         <!--Header-->
             <div class="modal-header d-flex justify-content-between">
                     <div class="img-cont">
-                        <img src="('images/r-a-l.png') " alt="" class="img-fluid" width="250" height="250" >
+                        <img src="images/r-a-l.png " alt="" class="img-fluid" width="250" height="250" >
                     </div>
                 <p class="heading ">
                     <h4>Rent-A-Live</h4></p>
@@ -1290,37 +1298,37 @@ transform: scale(0.95);
                         </div>
                         <div class="swiper-slide">
                             <div class=" ">
-                                <div class="card-image d-flex justify-content-center align-items-center"><img src="('images/modal/Landing page web.jpg')" alt="" class="img-fluid"></div>
+                                <div class="card-image d-flex justify-content-center align-items-center"><img src="images/modal/Landing page web.jpg" alt="" class="img-fluid"></div>
                             </div>
                         </div>
                         <div class="swiper-slide">
                             <div class=" ">
-                                <div class="card-image d-flex justify-content-center align-items-center"><img src="('images/modal/Manage tenant.png')" alt="" class="img-fluid"></div>
+                                <div class="card-image d-flex justify-content-center align-items-center"><img src="images/modal/Manage tenant.png" alt="" class="img-fluid"></div>
                             </div>
                         </div>
                         <div class="swiper-slide">
                             <div class=" ">
-                                <div class="card-image d-flex justify-content-center align-items-center"><img src="('images/modal/Message with your landlord.png')" alt="" class="img-fluid"></div>
+                                <div class="card-image d-flex justify-content-center align-items-center"><img src="images/modal/Message with your landlord.png" alt="" class="img-fluid"></div>
                             </div>
                         </div>
                         <div class="swiper-slide">
                             <div class=" ">
-                                <div class="card-image d-flex justify-content-center align-items-center"><img src="('images/modal/Payment.png')" alt="" class="img-fluid"></div>
+                                <div class="card-image d-flex justify-content-center align-items-center"><img src="images/modal/Payment.png" alt="" class="img-fluid"></div>
                             </div>
                         </div>
                         <div class="swiper-slide">
                             <div class=" ">
-                                <div class="card-image d-flex justify-content-center align-items-center"><img src="('images/modal/mobile 1.jpg')" alt="" class="" width="auto" height="775" ></div>
+                                <div class="card-image d-flex justify-content-center align-items-center"><img src="images/modal/mobile 1.jpg" alt="" class="" width="auto" height="775" ></div>
                             </div>
                         </div>
                         <div class="swiper-slide">
                             <div class=" ">
-                                <div class="card-image d-flex justify-content-center align-items-center"><img src="('images/modal/mobile 2.jpg')" alt="" class="" width="auto" height="775" ></div>
+                                <div class="card-image d-flex justify-content-center align-items-center"><img src="images/modal/mobile 2.jpg" alt="" class="" width="auto" height="775" ></div>
                             </div>
                         </div>
                         <div class="swiper-slide">
                             <div class=" ">
-                                <div class="card-image d-flex justify-content-center align-items-center"><img src="('images/modal/mobile 3.jpg')" alt="" class="" width="auto" height="775" ></div>
+                                <div class="card-image d-flex justify-content-center align-items-center"><img src="images/modal/mobile 3.jpg" alt="" class="" width="auto" height="775" ></div>
                             </div>
                         </div>
                     </div>
@@ -1338,7 +1346,7 @@ transform: scale(0.95);
         <!--Header-->
             <div class="modal-header d-flex justify-content-between">
                     <div class="img-cont">
-                        <img src="('images/INVISIBI.png') " alt="" class="img-fluid" width="250" height="250" >
+                        <img src="images/INVISIBI.png " alt="" class="img-fluid" width="250" height="250" >
                     </div>
                 <p class="heading ">
                     <h4>Invisible</h4></p>
@@ -1361,7 +1369,7 @@ transform: scale(0.95);
                         </div>
                         <div class="swiper-slide">
                             <div class="">
-                                <div class="card-image d-flex justify-content-center align-items-center"><img src="('images/modal/Screenshot_218.png')" alt="" class="img-fluid"></div>
+                                <div class="card-image d-flex justify-content-center align-items-center"><img src="images/modal/Screenshot_218.png" alt="" class="img-fluid"></div>
                             </div>
                         </div>
                         <div class="swiper-slide">
@@ -1386,7 +1394,7 @@ transform: scale(0.95);
         <!--Header-->
             <div class="modal-header d-flex justify-content-between">
                     <div class="img-cont">
-                        <img src="('images/peteat_logo.png') " alt="" class="img-fluid" width="150" height="150" >
+                        <img src="images/peteat_logo.png " alt="" class="img-fluid" width="150" height="150" >
                     </div>
                 <p class="heading "> 
                     <h4>Peteat: Milktea Website</h4></p>
@@ -1411,17 +1419,17 @@ transform: scale(0.95);
                         </div>
                         <div class="swiper-slide">
                             <div class="">
-                                <div class="card-image d-flex justify-content-center align-items-center"><img src="('images/modal/Screenshot_207.png')" alt="" class="img-fluid"></div>
+                                <div class="card-image d-flex justify-content-center align-items-center"><img src="images/modal/Screenshot_207.png" alt="" class="img-fluid"></div>
                             </div>
                         </div>
                         <div class="swiper-slide">
                             <div class="">
-                                <div class="card-image d-flex justify-content-center align-items-center"><img src="('images/modal/Screenshot_208.png')" alt="" class="img-fluid"></div>
+                                <div class="card-image d-flex justify-content-center align-items-center"><img src="images/modal/Screenshot_208.png" alt="" class="img-fluid"></div>
                             </div>
                         </div>
                         <div class="swiper-slide">
                             <div class="">
-                                <div class="card-image d-flex justify-content-center align-items-center"><img src="('images/modal/Screenshot_209.png')" alt="" class="img-fluid"></div>
+                                <div class="card-image d-flex justify-content-center align-items-center"><img src="images/modal/Screenshot_209.png" alt="" class="img-fluid"></div>
                             </div>
                         </div>
                     </div>
@@ -1441,7 +1449,7 @@ transform: scale(0.95);
     <!--Header-->
         <div class="modal-header d-flex justify-content-between">
                 <div class="img-cont">
-                    <img src="('images/flix_logo.png') " alt="" class="img-fluid" width="250" height="250" >
+                    <img src="images/flix_logo.png " alt="" class="img-fluid" width="250" height="250" >
                 </div>
             <p class="heading ">
                 <h4>Flix</h4></p>
@@ -1464,12 +1472,12 @@ transform: scale(0.95);
                     </div>
                     <div class="swiper-slide">
                         <div class="">
-                            <div class="card-image d-flex justify-content-center align-items-center"><img src="('images/modal/flix_login.png')" alt="" class="img-fluid"></div>
+                            <div class="card-image d-flex justify-content-center align-items-center"><img src="images/modal/flix_login.png" alt="" class="img-fluid"></div>
                         </div>
                     </div>
                     <div class="swiper-slide">
                         <div class="">
-                            <div class="card-image d-flex justify-content-center align-items-center"><img src="('images/modal/flix_db.png')" alt="" class="img-fluid"></div>
+                            <div class="card-image d-flex justify-content-center align-items-center"><img src="images/modal/flix_db.png" alt="" class="img-fluid"></div>
                         </div>
                     </div>
                 </div>
@@ -1483,6 +1491,11 @@ transform: scale(0.95);
     <footer>
         <h6 class="mb-2 d-flex justify-content-center text-center align-items-center justify-content-center">Designed & Built by Chezter Custodio</h5>
     </footer>
+    <script>
+        $("#email").on('click', function() {
+        window.location.href = "mailto:chez.cus@gmail.com";
+        });
+    </script>
     <script>
         AOS.init();
     </script>
@@ -1534,9 +1547,7 @@ transform: scale(0.95);
     },);
 
     //email
-    $("#email").on('click', function() {
-        window.location.href = "mailto:chez.cus@gmail.com";
-        });
+    
     </script>
 
 
