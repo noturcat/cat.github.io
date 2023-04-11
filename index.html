@@ -4,473 +4,349 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Laravel</title>
+        <title>Portfolio</title>
 
         <!-- Fonts -->
+        {{-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> --}}
         
-        <link href="https://fonts.bunny.net/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> 
         <!-- Styles -->
         <style>
             /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}a{background-color:transparent}[hidden]{display:none}html{font-family:system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;line-height:1.5}*,:after,:before{box-sizing:border-box;border:0 solid #e2e8f0}a{color:inherit;text-decoration:inherit}svg,video{display:block;vertical-align:middle}video{max-width:100%;height:auto}.bg-white{--tw-bg-opacity: 1;background-color:rgb(255 255 255 / var(--tw-bg-opacity))}.bg-gray-100{--tw-bg-opacity: 1;background-color:rgb(243 244 246 / var(--tw-bg-opacity))}.border-gray-200{--tw-border-opacity: 1;border-color:rgb(229 231 235 / var(--tw-border-opacity))}.border-t{border-top-width:1px}.flex{display:flex}.grid{display:grid}.hidden{display:none}.items-center{align-items:center}.justify-center{justify-content:center}.font-semibold{font-weight:600}.h-5{height:1.25rem}.h-8{height:2rem}.h-16{height:4rem}.text-sm{font-size:.875rem}.text-lg{font-size:1.125rem}.leading-7{line-height:1.75rem}.mx-auto{margin-left:auto;margin-right:auto}.ml-1{margin-left:.25rem}.mt-2{margin-top:.5rem}.mr-2{margin-right:.5rem}.ml-2{margin-left:.5rem}.mt-4{margin-top:1rem}.ml-4{margin-left:1rem}.mt-8{margin-top:2rem}.ml-12{margin-left:3rem}.-mt-px{margin-top:-1px}.max-w-6xl{max-width:72rem}.min-h-screen{min-height:100vh}.overflow-hidden{overflow:hidden}.p-6{padding:1.5rem}.py-4{padding-top:1rem;padding-bottom:1rem}.px-6{padding-left:1.5rem;padding-right:1.5rem}.pt-8{padding-top:2rem}.fixed{position:fixed}.relative{position:relative}.top-0{top:0}.right-0{right:0}.shadow{--tw-shadow: 0 1px 3px 0 rgb(0 0 0 / .1), 0 1px 2px -1px rgb(0 0 0 / .1);--tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000),var(--tw-ring-shadow, 0 0 #0000),var(--tw-shadow)}.text-center{text-align:center}.text-gray-200{--tw-text-opacity: 1;color:rgb(229 231 235 / var(--tw-text-opacity))}.text-gray-300{--tw-text-opacity: 1;color:rgb(209 213 219 / var(--tw-text-opacity))}.text-gray-400{--tw-text-opacity: 1;color:rgb(156 163 175 / var(--tw-text-opacity))}.text-gray-500{--tw-text-opacity: 1;color:rgb(107 114 128 / var(--tw-text-opacity))}.text-gray-600{--tw-text-opacity: 1;color:rgb(75 85 99 / var(--tw-text-opacity))}.text-gray-700{--tw-text-opacity: 1;color:rgb(55 65 81 / var(--tw-text-opacity))}.text-gray-900{--tw-text-opacity: 1;color:rgb(17 24 39 / var(--tw-text-opacity))}.underline{text-decoration:underline}.antialiased{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.w-5{width:1.25rem}.w-8{width:2rem}.w-auto{width:auto}.grid-cols-1{grid-template-columns:repeat(1,minmax(0,1fr))}@media (min-width:640px){.sm\:rounded-lg{border-radius:.5rem}.sm\:block{display:block}.sm\:items-center{align-items:center}.sm\:justify-start{justify-content:flex-start}.sm\:justify-between{justify-content:space-between}.sm\:h-20{height:5rem}.sm\:ml-0{margin-left:0}.sm\:px-6{padding-left:1.5rem;padding-right:1.5rem}.sm\:pt-0{padding-top:0}.sm\:text-left{text-align:left}.sm\:text-right{text-align:right}}@media (min-width:768px){.md\:border-t-0{border-top-width:0}.md\:border-l{border-left-width:1px}.md\:grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}}@media (min-width:1024px){.lg\:px-8{padding-left:2rem;padding-right:2rem}}@media (prefers-color-scheme:dark){.dark\:bg-gray-800{--tw-bg-opacity: 1;background-color:rgb(31 41 55 / var(--tw-bg-opacity))}.dark\:bg-gray-900{--tw-bg-opacity: 1;background-color:rgb(17 24 39 / var(--tw-bg-opacity))}.dark\:border-gray-700{--tw-border-opacity: 1;border-color:rgb(55 65 81 / var(--tw-border-opacity))}.dark\:text-white{--tw-text-opacity: 1;color:rgb(255 255 255 / var(--tw-text-opacity))}.dark\:text-gray-400{--tw-text-opacity: 1;color:rgb(156 163 175 / var(--tw-text-opacity))}.dark\:text-gray-500{--tw-text-opacity: 1;color:rgb(107 114 128 / var(--tw-text-opacity))}}
         </style>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+        />
+
+        <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+<style>
+body{
+    background-color: #DEE2E6;
+    font-family: 'Montserrat Alternates', sans-serif;   
+}
+h1{
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: 800;
+    color: #212529;
+}
+
+    .animate__animated h1{
+        font-size: 64px;
+    }
+.collapse{
+    font-size: 24px;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: 600;
+}
+.height{
+    margin-bottom: 400px;
+    // height: 800px;
+}
+
+
+.home .circle {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.home .contact {
+    
+font-family: inherit;
+font-size: 16px;
+background: #6C757D;
+color: #F8F9FA;
+padding: 0.5em 1em;
+padding-left: 0.9em;
+display: flex;
+align-items: center;
+border: none;
+border-radius: 16px;
+overflow: hidden;
+transition: all 0.2s;
+}
+
+.home .contact span {
+display: block;
+margin-left: 0.3em;
+transition: all 0.3s ease-in-out;
+}
+
+.home .contact svg {
+display: block;
+transform-origin: center center;
+transition: transform 0.3s ease-in-out;
+}
+
+.home .contact:hover .svg-wrapper {
+animation: fly-1 0.6s ease-in-out infinite alternate;
+}
+
+.home .contact:hover svg {
+transform: translateX(1.2em) rotate(45deg) scale(1.1);
+}
+
+.home .contact:hover span {
+transform: translateX(5em);
+}
+
+.home .contact:active {
+transform: scale(0.95);
+}
+    .home .circle img {
+        height: 100%;
+        margin: 0 auto;
+    }
+    
+    
+.projects{
+    display: flex;
+    flex-wrap: wrap;
+    
+    }
+    .card {
+    width: 250px;
+    min-width: 250px;
+    
+    height: auto;
+    background: #CED4DA;
+    padding: .4em;
+    border-radius: 6px;
+    
+}
+    .preview{
+        background-color: #343A40;
+        color: #F8F9FA;
+    }
+    .preview a {
+        text-decoration: none;
+    }
+    .card .projects button a{
+        text-decoration: none;
+        background-color: #343A40;
+        color: #F8F9FA;
+    }
+    .card .card-image {
+    width: 100%;
+    height: 65%;
+    border-radius: 6px 6px 0 0;
+    }
+
+    .card .card-image:hover {
+    transform: scale(0.98);
+    }
+    .card .title {
+    text-transform: uppercase;
+    font-size: 1.5em;
+    font-weight: 600;
+    color: #212529;
+    padding: 10px 7px 0;
+    }
+    .card .category {
+    text-transform: uppercase;
+    font-size: 0.9em;
+    font-weight: 600;
+    color:#495057;
+    padding: 10px 7px 0;
+    }
+
+    .card .category:hover {
+    cursor: pointer;
+    }
+
+    .card .heading {
+    font-weight: 600;
+    color: #495057;
+    padding: 7px;
+    }
+
+    .card .heading:hover {
+    cursor: pointer;
+    }
+
+    .card .author {
+    color: gray;
+    font-weight: 400;
+    font-size: 11px;
+    padding-top: 20px;
+    }
+
+    .card .name {
+    font-weight: 600;
+    }
+
+.swiper-wrapper .swiper-slide{
+        display: flex;
+        justify-content: center;
+    }
+
+
+    .skills .container{
+        background-color: #CED4DA;
+        margin: 10px;
+        border-radius: 25px;
+        padding: 20px;
+        text-align: center;
         
-
-        <style>
-            body {
-                font-family: 'Poppins', sans-serif;
-                color: #FFFFFF;
-                background-color: #003459;
-            }
-            .home-name{
-                height: 800px;
-            }
-            .card {
-            width: 250px;
-            height: 400px;
-            border-radius: 20px;
-            position: relative;
-            padding: 1.8rem;
-            border: 2px solid #c3c6ce;
-            transition: 0.5s ease-out;
-            overflow: visible;
-            }
-            .card.rentalive{
-            background-image: url("images/Screenshot_196.png");
-            background-size: 300px 500px;
-            background-repeat: no-repeat;
-            }
-            .card.milktea{
-            background-image: url("images/Screenshot_11111.png");
-            }
-
-            .card-details {
-            color: black;
-            height: 100%;
-            gap: .5em;
-            display: grid;
-            place-content: center;
-            }
-
-            .card-button {
-            transform: translate(-50%, 125%);
-            width: 60%;
-            border-radius: 1rem;
-            border: none;
-            background-color: #008bf8;
-            color: #fff;
-            font-size: 1rem;
-            padding: .5rem 1rem;
-            position: absolute;
-            left: 50%;
-            bottom: 0;
-            opacity: 0;
-            transition: 0.3s ease-out;
-            }
-
-            .text-body {
-            color: rgb(134, 134, 134);
-            }
-
-            /*Text*/
-            .text-title {
-            font-size: 1.5em;
-            font-weight: bold;
-            }
-
-            /*Hover*/
-            .card:hover {
-            border-color: #008bf8;
-            box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
-            }
-
-            .card:hover .card-button {
-            transform: translate(-50%, 50%);
-            opacity: 1;
-            }
-
-
-            /* tooltip */
-            .uiverse {
-            position: relative;
-            color: #000;
-            font-size: 17px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            cursor: pointer;
-            transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-            }
-
-            .tooltip {
-            position: absolute;
-            top: 0;
-            font-size: 24px;
-            font-weight: 500;
-            background: #ffffff;
-            color: #ffffff;
-            padding: 5px 8px;
-            border-radius: 5px;
-            box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
-            opacity: 0;
-            pointer-events: none;
-            transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-            }
-
-            .tooltip::before {
-            position: absolute;
-            content: "";
-            height: 8px;
-            width: 8px;
-            background: #ffffff;
-            bottom: -3px;
-            left: 50%;
-            transform: translate(-50%) rotate(45deg);
-            transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-            }
-
-            .uiverse:hover .tooltip {
-            top: -45px;
-            opacity: 1;
-            visibility: visible;
-            pointer-events: auto;
-            }
-
-            svg:hover span,
-            svg:hover .tooltip {
-            text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
-            }
-
+    }
+    .skills .container img{
+            height: 100px;
+            width: auto;
+            padding: 10px;
             
-            .uiverse:hover .tooltip,
-            .uiverse:hover .tooltip::before {
-            background: transparent;
-            color: #ffffff;
-            }
+        }
+    .skills h4{
+        font-family: 'Montserrat Alternates', sans-serif;
+        font-weight: 600;
+    }
+    .certifications .container{
+        margin: 10px;
+        text-align: center;
+    }
 
 
-            /* star effect */
-            .uiverse {
-            position: relative;
-            transition: all .3s ease-in-out;
-            }
 
-            .star-1 {
-            position: absolute;
-            top: 20%;
-            left: 20%;
-            width: 25px;
-            height: auto;
-            filter: drop-shadow(0 0 0 #fffdef);
-            z-index: -5;
-            transition: all 1s cubic-bezier(0.05, 0.83, 0.43, 0.96);
-            }
 
-            .star-2 {
-            position: absolute;
-            top: 45%;
-            left: 45%;
-            width: 15px;
-            height: auto;
-            filter: drop-shadow(0 0 0 #fffdef);
-            z-index: -5;
-            transition: all 1s cubic-bezier(0, 0.4, 0, 1.01);
-            }
 
-            .star-3 {
-            position: absolute;
-            top: 40%;
-            left: 40%;
-            width: 5px;
-            height: auto;
-            filter: drop-shadow(0 0 0 #fffdef);
-            z-index: -5;
-            transition: all 1s cubic-bezier(0, 0.4, 0, 1.01);
-            }
+    
+        .button-container .button {
+        cursor: pointer;
+        --width: 100px;
+        --height: 35px;
+        --tooltip-height: 35px;
+        --tooltip-width: 90px;
+        --gap-between-tooltip-to-button: 18px;
+        --button-color: #6C757D;
+        --tooltip-color: #fff;
+        width: var(--width);
+        height: var(--height);
+        background: var(--button-color);
+        position: relative;
+        text-align: center;
+        border-radius: 0.45em;
+        font-family: "Arial";
+        transition: background 0.3s;
+        }
 
-            .star-4 {
-            position: absolute;
-            top: 20%;
-            left: 40%;
-            width: 8px;
-            height: auto;
-            filter: drop-shadow(0 0 0 #fffdef);
-            z-index: -5;
-            transition: all .8s cubic-bezier(0, 0.4, 0, 1.01);
-            }
+        .button-container .button::before {
+        position: absolute;
+        content: attr(data-tooltip);
+        width: var(--tooltip-width);
+        height: var(--tooltip-height);
+        background-color: var(--tooltip-color);
+        font-size: 0.9rem;
+        color: #111;
+        border-radius: .25em;
+        line-height: var(--tooltip-height);
+        bottom: calc(var(--height) + var(--gap-between-tooltip-to-button) + 10px);
+        left: calc(50% - var(--tooltip-width) / 2);
+        }
 
-            .star-5 {
-            position: absolute;
-            top: 25%;
-            left: 45%;
-            width: 15px;
-            height: auto;
-            filter: drop-shadow(0 0 0 #fffdef);
-            z-index: -5;
-            transition: all .6s cubic-bezier(0, 0.4, 0, 1.01);
-            }
+        .button-container .button::after {
+        position: absolute;
+        content: '';
+        width: 0;
+        height: 0;
+        border: 10px solid transparent;
+        border-top-color: var(--tooltip-color);
+        left: calc(50% - 10px);
+        bottom: calc(100% + var(--gap-between-tooltip-to-button) - 10px);
+        }
 
-            .star-6 {
-            position: absolute;
-            top: 5%;
-            left: 50%;
-            width: 5px;
-            height: auto;
-            filter: drop-shadow(0 0 0 #fffdef);
-            z-index: -5;
-            transition: all .8s ease;
-            }
+        .button-container .button::after,.button::before {
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.5s;
+        }
 
-            .uiverse:hover {
-            background: transparent;
-            }
+        .button-container .text {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        }
 
-            .uiverse:hover .star-1 {
-            position: absolute;
-            top: -80%;
-            left: -30%;
-            width: 25px;
-            height: auto;
-            filter: drop-shadow(0 0 10px #fffdef);
-            z-index: 2;
-            }
+        .button-container .button-wrapper,.text,.icon {
+        overflow: hidden;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        color: #fff;
+        }
 
-            .uiverse:hover .star-2 {
-            position: absolute;
-            top: -25%;
-            left: 10%;
-            width: 15px;
-            height: auto;
-            filter: drop-shadow(0 0 10px #fffdef);
-            z-index: 2;
-            }
+        .button-container .text {
+        top: 0
+        }
 
-            .uiverse:hover .star-3 {
-            position: absolute;
-            top: 55%;
-            left: 25%;
-            width: 5px;
-            height: auto;
-            filter: drop-shadow(0 0 10px #fffdef);
-            z-index: 2;
-            }
+        .button-container .text,.icon {
+        transition: top 0.5s;
+        }
 
-            .uiverse:hover .star-4 {
-            position: absolute;
-            top: 30%;
-            left: 80%;
-            width: 8px;
-            height: auto;
-            filter: drop-shadow(0 0 10px #fffdef);
-            z-index: 2;
-            }
+        .button-container .icon {
+        color: #fff;
+        top: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        }
 
-            .uiverse:hover .star-5 {
-            position: absolute;
-            top: 25%;
-            left: 115%;
-            width: 15px;
-            height: auto;
-            filter: drop-shadow(0 0 10px #fffdef);
-            z-index: 2;
-            }
+        .button-container .button:hover {
+        background: #212529;
+        }
 
-            .uiverse:hover .star-6 {
-            position: absolute;
-            top: 5%;
-            left: 60%;
-            width: 5px;
-            height: auto;
-            filter: drop-shadow(0 0 10px #fffdef);
-            z-index: 2;
-            }
+        .button-container .button:hover .text {
+        top: -100%;
+        }
 
-            .fil0 {
-            fill: #FFFDEF
-            }
+        .button-container .button:hover .icon {
+        top: 0;
+        }
 
-            .contact {
-            font-family: inherit;
-            font-size: 16px;
-            background: royalblue;
-            color: white;
-            padding: 0.7em 1em;
-            padding-left: 0.9em;
-            display: flex;
-            align-items: center;
-            border: none;
-            border-radius: 16px;
-            overflow: hidden;
-            transition: all 0.2s;
-            }
+        .button-container .button:hover:before,.button:hover:after {
+        opacity: 1;
+        visibility: visible;
+        }
 
-            .contact span {
-            display: block;
-            margin-left: 0.3em;
-            transition: all 0.3s ease-in-out;
-            }
+        .button-container .button:hover:after {
+        bottom: calc(var(--height) + var(--gap-between-tooltip-to-button) - 20px);
+        }
 
-            .contact svg {
-            display: block;
-            transform-origin: center center;
-            transition: transform 0.3s ease-in-out;
-            }
+        .button-container .button:hover:before {
+        bottom: calc(var(--height) + var(--gap-between-tooltip-to-button));
+        }
 
-            .contact:hover .svg-wrapper {
-            animation: fly-1 0.6s ease-in-out infinite alternate;
-            }
+    .resume h3, ul, table{
+        font-family: 'Montserrat Alternates', sans-serif;
+        font-weight: 300;
+        color: #212529;
+        // color: bisque;
+    }
+    .resume h1{
+        font-family: 'Montserrat Alternates', sans-serif;
+        font-weight: 700;
+        color: #212529;
+    }
 
-            .contact:hover svg {
-            transform: translateX(1.2em) rotate(45deg) scale(1.1);
-            }
+    .modal-header .img-cont{
+        height: 75px;
+        width: 75px;
+        display: flex;
+        align-items: center;
+        
+    }
+.modal-header .img-cont img{
+            object-fit: fill;
+        }
 
-            .contact:hover span {
-            transform: translateX(5em);
-            }
-
-            .contact:active {
-            transform: scale(0.95);
-            }
-
-            @keyframes fly-1 {
-            from {
-                transform: translateY(0.1em);
-            }
-
-            to {
-                transform: translateY(-0.1em);
-            }
-            }
-
-            .button {
-            --width: 100px;
-            --height: 35px;
-            --tooltip-height: 35px;
-            --tooltip-width: 90px;
-            --gap-between-tooltip-to-button: 18px;
-            --button-color: #1163ff;
-            --tooltip-color: #fff;
-            width: var(--width);
-            height: var(--height);
-            background: var(--button-color);
-            position: relative;
-            text-align: center;
-            border-radius: 0.45em;
-            font-family: "Arial";
-            transition: background 0.3s;
-            }
-
-            .button::before {
-            position: absolute;
-            content: attr(data-tooltip);
-            width: var(--tooltip-width);
-            height: var(--tooltip-height);
-            background-color: var(--tooltip-color);
-            font-size: 0.9rem;
-            color: #111;
-            border-radius: .25em;
-            line-height: var(--tooltip-height);
-            bottom: calc(var(--height) + var(--gap-between-tooltip-to-button) + 10px);
-            left: calc(50% - var(--tooltip-width) / 2);
-            }
-
-            .button::after {
-            position: absolute;
-            content: '';
-            width: 0;
-            height: 0;
-            border: 10px solid transparent;
-            border-top-color: var(--tooltip-color);
-            left: calc(50% - 10px);
-            bottom: calc(100% + var(--gap-between-tooltip-to-button) - 10px);
-            }
-
-            .button::after,.button::before {
-            opacity: 0;
-            visibility: hidden;
-            transition: all 0.5s;
-            }
-
-            .text {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            }
-
-            .button-wrapper,.text,.icon {
-            overflow: hidden;
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            left: 0;
-            color: #fff;
-            }
-
-            .text {
-            top: 0
-            }
-
-            .text,.icon {
-            transition: top 0.5s;
-            }
-
-            .icon {
-            color: #fff;
-            top: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            }
-
-            .button:hover {
-            background: #6c18ff;
-            }
-
-            .button:hover .text {
-            top: -100%;
-            }
-
-            .button:hover .icon {
-            top: 0;
-            }
-
-            .button:hover:before,.button:hover:after {
-            opacity: 1;
-            visibility: visible;
-            }
-
-            .button:hover:after {
-            bottom: calc(var(--height) + var(--gap-between-tooltip-to-button) - 20px);
-            }
-
-            .button:hover:before {
-            bottom: calc(var(--height) + var(--gap-between-tooltip-to-button));
-            }
-            .skill-box{
-                border-radius: 16px;
-            }
-            @media screen and (max-width: 480px) {
-            #my_picture { display: none; }   /* hide it elsewhere */
-            .home-name { height: auto; }
-            }
-            @media screen and (min-width: 481px) and (max-width: 768px) {
-            #my_picture { display: none; }   /* hide it elsewhere */
-            .home-name { height: auto; }
-            }
-            @media screen and (min-width: 769px) and (max-width: 1024px) {
-            #my_picture { display: none; }   /* hide it elsewhere */
-            .home-name { height: auto; }
-            }
-
-            /* loader */
-             
+    /* loader */
+        
         .pl {
         width: 5em;
         height: 5em;
@@ -691,430 +567,928 @@
         transform: rotate(4.75turn);
         }
         }
-            #preloader{
-                padding: 400px;
-                background: #003459;
-                height: 100%;
-                width: 100%;
-                position: fixed;
-                z-index: 100;
-                
-            }
-        </style>
-    </head>
+        #preloader{
+            padding: 400px;
+            background: #212529;
+            height: 100%;
+            width: 100%;
+            position: fixed;
+            z-index: 100;
+            
+        }
+        /* The Modal (background) */
+    .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    }
 
-<body>
+    /* Modal Content */
+    .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    }
+
+    /* The Close Button */
+    .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    }
+
+    .close:hover,
+    .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+    }
+
+    .linkedin{
+    padding: 0.8em 1em;
+    background:
+    linear-gradient(
+    to right,
+    #CED4DA,
+    #CED4DA
+        ),
+    linear-gradient(
+    to right,
+    #DEE2E6,
+    #6C757D,
+    #212529
+    );
+    background-size: 100% 3px, 0 3px;
+    background-position: 100% 100%, 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size 400ms;
     
-            <svg class="pl" id="preloader" width="128px" height="128px" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
-            <circle class="pl__ring1" cx="64" cy="64" r="60" fill="none" stroke="hsl(3,90%,55%)" stroke-width="8" transform="rotate(-90,64,64)" stroke-linecap="round" stroke-dasharray="377 377" stroke-dashoffset="-376.4"></circle>
-            <circle class="pl__ring2" cx="64" cy="64" r="52.5" fill="none" stroke="hsl(13,90%,55%)" stroke-width="7" transform="rotate(-90,64,64)" stroke-linecap="round" stroke-dasharray="329.9 329.9" stroke-dashoffset="-329.3"></circle>
-            <circle class="pl__ring3" cx="64" cy="64" r="46" fill="none" stroke="hsl(23,90%,55%)" stroke-width="6" transform="rotate(-90,64,64)" stroke-linecap="round" stroke-dasharray="289 289" stroke-dashoffset="-288.6"></circle>
-            <circle class="pl__ring4" cx="64" cy="64" r="40.5" fill="none" stroke="hsl(33,90%,55%)" stroke-width="5" transform="rotate(-90,64,64)" stroke-linecap="round" stroke-dasharray="254.5 254.5" stroke-dashoffset="-254"></circle>
-            <circle class="pl__ring5" cx="64" cy="64" r="36" fill="none" stroke="hsl(43,90%,55%)" stroke-width="4" transform="rotate(-90,64,64)" stroke-linecap="round" stroke-dasharray="226.2 226.2" stroke-dashoffset="-225.8"></circle>
-            <circle class="pl__ring6" cx="64" cy="64" r="32.5" fill="none" stroke="hsl(53,90%,55%)" stroke-width="3" transform="rotate(-90,64,64)" stroke-linecap="round" stroke-dasharray="204.2 204.2" stroke-dashoffset="-203.9"></circle>
-            </svg>
-            
-    <div class="container"> 
-        <div class="home-name d-flex align-items-center justify-content-center">
-            <div class="row mt-5">
-                <div class="col-md-5">
-                    <h2 class="animate__animated animate__pulse">Hello! I am Chezter,</h2>
-                    <h3 > Web Developer </h3>
-                    <h4>I am a Fresh Graduate of BSIT major in Web and Mobile Application</h4>
-                    <button class="contact">
-                        <div class="svg-wrapper-1">
-                            <div class="svg-wrapper">
-                                <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M0 0h24v24H0z" fill="none"></path>
-                                <path d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z" fill="currentColor"></path>
-                                </svg>
-                            </div>
-                            </div>
-                            <span>Contact Me</span>
-                        </button>
-                </div>
-                <div class="col d-flexbox align-items-center justify-content-center " id="my_picture">
-                    <img src="images/meh.jpg"class="mx-2"  height="200" width="200">
-                    <img src="images/meh.jpg"class="mx-1"  height="250" width="250">
-                    <img src="images/klee.jpg"class="mx-2"  height="200" width="200">
-                    
-                </div>
-                
-            </div>
-        </div>
-        <div data-aos="fade-down" class="home-name ">
-            <h1 class=" mt-5"> PORTFOLIO</h1>
-            <h6>Projects</h6>
-            <div data-aos="fade-up-right" class="row mt-5 mb-5 d-flex align-items-center justify-content-center">
-                <div class=" mx-3 card rentalive">
-                    <div class="card-details">
-                        <p class="text-title">Rent a Live</p>
-                        <p class="text-body">Commercial Property Marketplace and Tenant Record Management 
-                            System</p>
-                    </div>
-                    <button class="card-button"></button>
-                </div>
-                <div class=" mx-3 card milktea">
-                    <div class="card-details">
-                        <p class="text-title">Petite: Milk Tea Website</p>
-                        <p class="text-body">an E-commerce shopping Website that is created using 
-                            HTML5, CSS, Bootstrap 5</p>
-                    </div>
-                    <button class="card-button"></button>
-                </div>
-                <div class=" mx-3 card">
-                    <div class="card-details">
-                        <p class="text-title">BuynSell</p>
-                        <p class="text-body"> an E-commerce Web Based Application that is created using Laravel, 
-                            HTML5, CSS, SASS, Bootstrap 5</p>
-                    </div>
-                    <button class="card-button"></button>
-                </div>
-                
-            </div>
-                
+}
+.linkedin {
+  color: inherit;
+  text-decoration: none;
+}
 
-        </div>
-        <div data-aos="fade-down" class="home-name">
-            <h1>About Me</h1>
-            <h6>Personal</h6>
-            <div class=" d-flex align-items-center justify-content-center">
-                <div class="row mt-5 ">
-                    <div data-aos="fade-up-right" class="col-7 d-flex align-items-center justify-content-center">
-                        <img src="images/klee.jpg"id="my_picture" class="mx-2"  height="200" width="200">
-                    </div>
-                    <div data-aos="fade-up-left" class="col-md-5 ">
-                        <h3>I started programming on 2017, I just want to explore it and it became my interest and thats how my career started as a Frontend Developer.</h4>
-                            <div data-tooltip="Size: 20Mb" class="button">
-                                <div class="button-wrapper">
-                                    <div class="text">Resume</div>
-                                    <span class="icon">
-                                    <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" height="1.5em" width="1.5em" role="img" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><path d="M12 15V3m0 12l-4-4m4 4l4-4M2 17l.621 2.485A2 2 0 0 0 4.561 21h14.878a2 2 0 0 0 1.94-1.515L22 17" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" fill="none"></path></svg>
-                                    </span>
-                                </div>
-                            </div>
-                    </div>
-                    
-                    
-                </div>
-            </div>
+.linkedin {
+  background:
+    linear-gradient(
+      to right,
+     #CED4DA,
+    #CED4DA
+    ),
+    linear-gradient(
+      to right,
+      #DEE2E6,
+    #6C757D,
+    #212529
+  );
+  background-size: 100% 3px, 0 3px;
+  background-position: 100% 100%, 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 400ms;
+}
 
-        </div>
-        <div data-aos="fade-down" class="home-name">
-            <h1>Skills</h1>
-            <h6>Years</h6>
-            <div data-aos="fade-up" class="row my-5 d-flex justify-content-center">
-                <div class="skill-box mb-2 col-md mx-1 d-flex justify-content-center text-center flex-wrap align-items-center justify-content-center bg-dark p-4 ">
+.linkedin:hover {
+  background-size: 0 3px, 100% 3px;
+}
+    </style>
+    </head>
+<div class="preloader">
+    <svg class="pl" id="preloader" width="128px" height="128px" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
+    <circle class="pl__ring1" cx="64" cy="64" r="60" fill="none" stroke="#6C757D" stroke-width="8" transform="rotate(-90,64,64)" stroke-linecap="round" stroke-dasharray="377 377" stroke-dashoffset="-376.4"></circle>
+    <circle class="pl__ring2" cx="64" cy="64" r="52.5" fill="none" stroke="#ADB5BD" stroke-width="7" transform="rotate(-90,64,64)" stroke-linecap="round" stroke-dasharray="329.9 329.9" stroke-dashoffset="-329.3"></circle>
+    <circle class="pl__ring3" cx="64" cy="64" r="46" fill="none" stroke="#CED4DA" stroke-width="6" transform="rotate(-90,64,64)" stroke-linecap="round" stroke-dasharray="289 289" stroke-dashoffset="-288.6"></circle>
+    <circle class="pl__ring4" cx="64" cy="64" r="40.5" fill="none" stroke="#DEE2E6" stroke-width="5" transform="rotate(-90,64,64)" stroke-linecap="round" stroke-dasharray="254.5 254.5" stroke-dashoffset="-254"></circle>
+    <circle class="pl__ring5" cx="64" cy="64" r="36" fill="none" stroke="#E9ECEF" stroke-width="4" transform="rotate(-90,64,64)" stroke-linecap="round" stroke-dasharray="226.2 226.2" stroke-dashoffset="-225.8"></circle>
+    <circle class="pl__ring6" cx="64" cy="64" r="32.5" fill="none" stroke="#F8F9FA" stroke-width="3" transform="rotate(-90,64,64)" stroke-linecap="round" stroke-dasharray="204.2 204.2" stroke-dashoffset="-203.9"></circle>
+    </svg>
+</div>
 
-                        <h3 class="mb-5  align-text-center col-12">Frontend Development</h3>
-                        
-                        <div class="uiverse col-6">
-                            <span class="tooltip">HTML5</span>
-                            <span>
-                                <img src="images/html-5-svgrepo-com.svg"class="m-3"  height="120" width="120">
-                                <div class="star-1">
-                                    <svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 784.11 815.53" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><defs></defs><g id="Layer_x0020_1"><metadata id="CorelCorpID_0Corel-Layer"></metadata><path d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z" class="fil0"></path></g></svg>
-                                    </div>
-                                    <div class="star-2">
-                                    <svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 784.11 815.53" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><defs></defs><g id="Layer_x0020_1"><metadata id="CorelCorpID_0Corel-Layer"></metadata><path d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z" class="fil0"></path></g></svg>
-                                    </div>
-                                    <div class="star-3">
-                                    <svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 784.11 815.53" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><defs></defs><g id="Layer_x0020_1"><metadata id="CorelCorpID_0Corel-Layer"></metadata><path d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z" class="fil0"></path></g></svg>
-                                    </div>
-                                    <div class="star-4">
-                                    <svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 784.11 815.53" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><defs></defs><g id="Layer_x0020_1"><metadata id="CorelCorpID_0Corel-Layer"></metadata><path d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z" class="fil0"></path></g></svg>
-                                    </div>
-                                    <div class="star-5">
-                                    <svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 784.11 815.53" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><defs></defs><g id="Layer_x0020_1"><metadata id="CorelCorpID_0Corel-Layer"></metadata><path d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z" class="fil0"></path></g></svg>
-                                    </div>
-                                    <div class="star-6">
-                                    <svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 784.11 815.53" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><defs></defs><g id="Layer_x0020_1"><metadata id="CorelCorpID_0Corel-Layer"></metadata><path d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z" class="fil0"></path></g></svg>
-                                    </div>
-                            </span><h5 style="color:white;">5 years</h5>
-                        </div>
-                        <div class="uiverse col-6">
-                            <span class="tooltip">CSS3</span>
-                            <span>
-                                <img src="images/css3-svgrepo-com.svg"class="m-3"  height="100" width="100">
-                                <div class="star-1">
-                                    <svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 784.11 815.53" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><defs></defs><g id="Layer_x0020_1"><metadata id="CorelCorpID_0Corel-Layer"></metadata><path d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z" class="fil0"></path></g></svg>
-                                    </div>
-                                    <div class="star-2">
-                                    <svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 784.11 815.53" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><defs></defs><g id="Layer_x0020_1"><metadata id="CorelCorpID_0Corel-Layer"></metadata><path d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z" class="fil0"></path></g></svg>
-                                    </div>
-                                    <div class="star-3">
-                                    <svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 784.11 815.53" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><defs></defs><g id="Layer_x0020_1"><metadata id="CorelCorpID_0Corel-Layer"></metadata><path d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z" class="fil0"></path></g></svg>
-                                    </div>
-                                    <div class="star-4">
-                                    <svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 784.11 815.53" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><defs></defs><g id="Layer_x0020_1"><metadata id="CorelCorpID_0Corel-Layer"></metadata><path d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z" class="fil0"></path></g></svg>
-                                    </div>
-                                    <div class="star-5">
-                                    <svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 784.11 815.53" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><defs></defs><g id="Layer_x0020_1"><metadata id="CorelCorpID_0Corel-Layer"></metadata><path d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z" class="fil0"></path></g></svg>
-                                    </div>
-                                    <div class="star-6">
-                                    <svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 784.11 815.53" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><defs></defs><g id="Layer_x0020_1"><metadata id="CorelCorpID_0Corel-Layer"></metadata><path d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z" class="fil0"></path></g></svg>
-                                    </div>
-                            </span><h5 style="color:white;">5 years</h5>
-                        </div>
-                        <div class="uiverse col-6">
-                            <span class="tooltip">BootStrap</span>
-                            <span>
-                                <img src="images/bootstrap-4-logo-svgrepo-com.svg"class="m-3"  height="100" width="100">
-                                <div class="star-1">
-                                    <svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 784.11 815.53" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><defs></defs><g id="Layer_x0020_1"><metadata id="CorelCorpID_0Corel-Layer"></metadata><path d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z" class="fil0"></path></g></svg>
-                                    </div>
-                                    <div class="star-2">
-                                    <svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 784.11 815.53" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><defs></defs><g id="Layer_x0020_1"><metadata id="CorelCorpID_0Corel-Layer"></metadata><path d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z" class="fil0"></path></g></svg>
-                                    </div>
-                                    <div class="star-3">
-                                    <svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 784.11 815.53" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><defs></defs><g id="Layer_x0020_1"><metadata id="CorelCorpID_0Corel-Layer"></metadata><path d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z" class="fil0"></path></g></svg>
-                                    </div>
-                                    <div class="star-4">
-                                    <svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 784.11 815.53" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><defs></defs><g id="Layer_x0020_1"><metadata id="CorelCorpID_0Corel-Layer"></metadata><path d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z" class="fil0"></path></g></svg>
-                                    </div>
-                                    <div class="star-5">
-                                    <svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 784.11 815.53" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><defs></defs><g id="Layer_x0020_1"><metadata id="CorelCorpID_0Corel-Layer"></metadata><path d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z" class="fil0"></path></g></svg>
-                                    </div>
-                                    <div class="star-6">
-                                    <svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 784.11 815.53" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><defs></defs><g id="Layer_x0020_1"><metadata id="CorelCorpID_0Corel-Layer"></metadata><path d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z" class="fil0"></path></g></svg>
-                                    </div>
-                            </span><h5 style="color:white;">1 year </h5>
-                        </div>
-                        <div class="uiverse col-6">
-                            <span class="tooltip">JavaScript</span>
-                            <span>
-                                <img src="images/javascript-svgrepo-com.svg"class="m-3"  height="100" width="100">
-                                <div class="star-1">
-                                    <svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 784.11 815.53" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><defs></defs><g id="Layer_x0020_1"><metadata id="CorelCorpID_0Corel-Layer"></metadata><path d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z" class="fil0"></path></g></svg>
-                                    </div>
-                                    <div class="star-2">
-                                    <svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 784.11 815.53" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><defs></defs><g id="Layer_x0020_1"><metadata id="CorelCorpID_0Corel-Layer"></metadata><path d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z" class="fil0"></path></g></svg>
-                                    </div>
-                                    <div class="star-3">
-                                    <svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 784.11 815.53" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><defs></defs><g id="Layer_x0020_1"><metadata id="CorelCorpID_0Corel-Layer"></metadata><path d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z" class="fil0"></path></g></svg>
-                                    </div>
-                                    <div class="star-4">
-                                    <svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 784.11 815.53" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><defs></defs><g id="Layer_x0020_1"><metadata id="CorelCorpID_0Corel-Layer"></metadata><path d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z" class="fil0"></path></g></svg>
-                                    </div>
-                                    <div class="star-5">
-                                    <svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 784.11 815.53" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><defs></defs><g id="Layer_x0020_1"><metadata id="CorelCorpID_0Corel-Layer"></metadata><path d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z" class="fil0"></path></g></svg>
-                                    </div>
-                                    <div class="star-6">
-                                    <svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 784.11 815.53" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><defs></defs><g id="Layer_x0020_1"><metadata id="CorelCorpID_0Corel-Layer"></metadata><path d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z" class="fil0"></path></g></svg>
-                                    </div>
-                            </span><h5 style="color:white;">3 years</h5>
-                        </div>
-                </div>
-                <div class="skill-box mb-2 col-md mx-1 d-flex justify-content-center text-center flex-wrap align-items-center justify-content-center bg-dark p-4 ">
 
-                    <h3 class="mb-5 align-text-center col-12">Backend Development</h3>
-                    
-                    <div class="uiverse col-6">
-                        <span class="tooltip">LARAVEL</span>
-                        <span>
-                            <img src="images/laravel-svgrepo-com.svg"class="m-3"  height="100" width="100">
-                            <div class="star-1">
-                                <svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 784.11 815.53" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><defs></defs><g id="Layer_x0020_1"><metadata id="CorelCorpID_0Corel-Layer"></metadata><path d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z" class="fil0"></path></g></svg>
-                                </div>
-                                <div class="star-2">
-                                <svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 784.11 815.53" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><defs></defs><g id="Layer_x0020_1"><metadata id="CorelCorpID_0Corel-Layer"></metadata><path d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z" class="fil0"></path></g></svg>
-                                </div>
-                                <div class="star-3">
-                                <svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 784.11 815.53" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><defs></defs><g id="Layer_x0020_1"><metadata id="CorelCorpID_0Corel-Layer"></metadata><path d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z" class="fil0"></path></g></svg>
-                                </div>
-                                <div class="star-4">
-                                <svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 784.11 815.53" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><defs></defs><g id="Layer_x0020_1"><metadata id="CorelCorpID_0Corel-Layer"></metadata><path d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z" class="fil0"></path></g></svg>
-                                </div>
-                                <div class="star-5">
-                                <svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 784.11 815.53" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><defs></defs><g id="Layer_x0020_1"><metadata id="CorelCorpID_0Corel-Layer"></metadata><path d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z" class="fil0"></path></g></svg>
-                                </div>
-                                <div class="star-6">
-                                <svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 784.11 815.53" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><defs></defs><g id="Layer_x0020_1"><metadata id="CorelCorpID_0Corel-Layer"></metadata><path d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z" class="fil0"></path></g></svg>
-                                </div>
-                        </span><h5 style="color:white;">&lt;1 year </h5>
-                    </div>
-                    <div class="uiverse col-6">
-                        <span class="tooltip">PHP</span>
-                        <span>
-                            <img src="images/php-svgrepo-com.svg"class="m-3"  height="100" width="100">
-                            <div class="star-1">
-                                <svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 784.11 815.53" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><defs></defs><g id="Layer_x0020_1"><metadata id="CorelCorpID_0Corel-Layer"></metadata><path d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z" class="fil0"></path></g></svg>
-                                </div>
-                                <div class="star-2">
-                                <svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 784.11 815.53" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><defs></defs><g id="Layer_x0020_1"><metadata id="CorelCorpID_0Corel-Layer"></metadata><path d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z" class="fil0"></path></g></svg>
-                                </div>
-                                <div class="star-3">
-                                <svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 784.11 815.53" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><defs></defs><g id="Layer_x0020_1"><metadata id="CorelCorpID_0Corel-Layer"></metadata><path d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z" class="fil0"></path></g></svg>
-                                </div>
-                                <div class="star-4">
-                                <svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 784.11 815.53" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><defs></defs><g id="Layer_x0020_1"><metadata id="CorelCorpID_0Corel-Layer"></metadata><path d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z" class="fil0"></path></g></svg>
-                                </div>
-                                <div class="star-5">
-                                <svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 784.11 815.53" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><defs></defs><g id="Layer_x0020_1"><metadata id="CorelCorpID_0Corel-Layer"></metadata><path d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z" class="fil0"></path></g></svg>
-                                </div>
-                                <div class="star-6">
-                                <svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 784.11 815.53" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><defs></defs><g id="Layer_x0020_1"><metadata id="CorelCorpID_0Corel-Layer"></metadata><path d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z" class="fil0"></path></g></svg>
-                                </div><h5 style="color:white;">2 years </h5>
-                        </span>
-                    </div>
-                    <div class="uiverse col-6">
-                        <span class="tooltip">MySql</span>
-                        <span>
-                            <img src="images/mysql-logo-svgrepo-com.svg"class="m-3"  height="100" width="100">
-                            <div class="star-1">
-                                <svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 784.11 815.53" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><defs></defs><g id="Layer_x0020_1"><metadata id="CorelCorpID_0Corel-Layer"></metadata><path d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z" class="fil0"></path></g></svg>
-                                </div>
-                                <div class="star-2">
-                                <svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 784.11 815.53" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><defs></defs><g id="Layer_x0020_1"><metadata id="CorelCorpID_0Corel-Layer"></metadata><path d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z" class="fil0"></path></g></svg>
-                                </div>
-                                <div class="star-3">
-                                <svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 784.11 815.53" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><defs></defs><g id="Layer_x0020_1"><metadata id="CorelCorpID_0Corel-Layer"></metadata><path d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z" class="fil0"></path></g></svg>
-                                </div>
-                                <div class="star-4">
-                                <svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 784.11 815.53" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><defs></defs><g id="Layer_x0020_1"><metadata id="CorelCorpID_0Corel-Layer"></metadata><path d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z" class="fil0"></path></g></svg>
-                                </div>
-                                <div class="star-5">
-                                <svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 784.11 815.53" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><defs></defs><g id="Layer_x0020_1"><metadata id="CorelCorpID_0Corel-Layer"></metadata><path d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z" class="fil0"></path></g></svg>
-                                </div>
-                                <div class="star-6">
-                                <svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 784.11 815.53" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><defs></defs><g id="Layer_x0020_1"><metadata id="CorelCorpID_0Corel-Layer"></metadata><path d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z" class="fil0"></path></g></svg>
-                                </div>
-                        </span><h5 style="color:white;">2 years</h5>
-                    </div>
-                    <div class="uiverse col-6">
-                        <span class="tooltip">CodeIgniter</span>
-                        <span>
-                            <img src="images/codeigniter-logo-svgrepo-com.svg"class="m-3"  height="100" width="100">
-                            <div class="star-1">
-                                <svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 784.11 815.53" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><defs></defs><g id="Layer_x0020_1"><metadata id="CorelCorpID_0Corel-Layer"></metadata><path d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z" class="fil0"></path></g></svg>
-                                </div>
-                                <div class="star-2">
-                                <svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 784.11 815.53" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><defs></defs><g id="Layer_x0020_1"><metadata id="CorelCorpID_0Corel-Layer"></metadata><path d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z" class="fil0"></path></g></svg>
-                                </div>
-                                <div class="star-3">
-                                <svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 784.11 815.53" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><defs></defs><g id="Layer_x0020_1"><metadata id="CorelCorpID_0Corel-Layer"></metadata><path d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z" class="fil0"></path></g></svg>
-                                </div>
-                                <div class="star-4">
-                                <svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 784.11 815.53" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><defs></defs><g id="Layer_x0020_1"><metadata id="CorelCorpID_0Corel-Layer"></metadata><path d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z" class="fil0"></path></g></svg>
-                                </div>
-                                <div class="star-5">
-                                <svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 784.11 815.53" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><defs></defs><g id="Layer_x0020_1"><metadata id="CorelCorpID_0Corel-Layer"></metadata><path d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z" class="fil0"></path></g></svg>
-                                </div>
-                                <div class="star-6">
-                                <svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 784.11 815.53" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><defs></defs><g id="Layer_x0020_1"><metadata id="CorelCorpID_0Corel-Layer"></metadata><path d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z" class="fil0"></path></g></svg>
-                                </div>
-                        </span><h5 style="color:white;">&lt;1 year</h5>
-                    </div>
-
-                </div>
-                <div class="skill-box col-md mb-2 mx-1 d-flex justify-content-center text-center flex-wrap align-items-center justify-content-center bg-dark p-4 ">
-
-                    <h3 class="mb-5 text-center d-flex justify-content-center col-12">Other Skills Acquired</h3>
-
-                    <div class="uiverse col-6">
-                        <span class="tooltip">Github</span>
-                        <span>
-                            <img src="images/git-svgrepo-com.svg"class="m-3"  height="100" width="100">
-                            <div class="star-1">
-                                <svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 784.11 815.53" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><defs></defs><g id="Layer_x0020_1"><metadata id="CorelCorpID_0Corel-Layer"></metadata><path d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z" class="fil0"></path></g></svg>
-                                </div>
-                                <div class="star-2">
-                                <svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 784.11 815.53" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><defs></defs><g id="Layer_x0020_1"><metadata id="CorelCorpID_0Corel-Layer"></metadata><path d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z" class="fil0"></path></g></svg>
-                                </div>
-                                <div class="star-3">
-                                <svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 784.11 815.53" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><defs></defs><g id="Layer_x0020_1"><metadata id="CorelCorpID_0Corel-Layer"></metadata><path d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z" class="fil0"></path></g></svg>
-                                </div>
-                                <div class="star-4">
-                                <svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 784.11 815.53" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><defs></defs><g id="Layer_x0020_1"><metadata id="CorelCorpID_0Corel-Layer"></metadata><path d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z" class="fil0"></path></g></svg>
-                                </div>
-                                <div class="star-5">
-                                <svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 784.11 815.53" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><defs></defs><g id="Layer_x0020_1"><metadata id="CorelCorpID_0Corel-Layer"></metadata><path d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z" class="fil0"></path></g></svg>
-                                </div>
-                                <div class="star-6">
-                                <svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 784.11 815.53" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><defs></defs><g id="Layer_x0020_1"><metadata id="CorelCorpID_0Corel-Layer"></metadata><path d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z" class="fil0"></path></g></svg>
-                                </div>
-                        </span><h5 style="color:white;">&lt;1 year</h5>
-                    </div>
-                    <div class="uiverse col-6">
-                        <span class="tooltip">Figma</span>
-                        <span>
-                            <img src="images/figma-svgrepo-com.svg"class="m-3"  height="100" width="100">
-                            <div class="star-1">
-                                <svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 784.11 815.53" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><defs></defs><g id="Layer_x0020_1"><metadata id="CorelCorpID_0Corel-Layer"></metadata><path d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z" class="fil0"></path></g></svg>
-                                </div>
-                                <div class="star-2">
-                                <svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 784.11 815.53" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><defs></defs><g id="Layer_x0020_1"><metadata id="CorelCorpID_0Corel-Layer"></metadata><path d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z" class="fil0"></path></g></svg>
-                                </div>
-                                <div class="star-3">
-                                <svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 784.11 815.53" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><defs></defs><g id="Layer_x0020_1"><metadata id="CorelCorpID_0Corel-Layer"></metadata><path d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z" class="fil0"></path></g></svg>
-                                </div>
-                                <div class="star-4">
-                                <svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 784.11 815.53" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><defs></defs><g id="Layer_x0020_1"><metadata id="CorelCorpID_0Corel-Layer"></metadata><path d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z" class="fil0"></path></g></svg>
-                                </div>
-                                <div class="star-5">
-                                <svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 784.11 815.53" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><defs></defs><g id="Layer_x0020_1"><metadata id="CorelCorpID_0Corel-Layer"></metadata><path d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z" class="fil0"></path></g></svg>
-                                </div>
-                                <div class="star-6">
-                                <svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 784.11 815.53" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><defs></defs><g id="Layer_x0020_1"><metadata id="CorelCorpID_0Corel-Layer"></metadata><path d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z" class="fil0"></path></g></svg>
-                                </div>
-                        </span><h5 style="color:white;">&lt;1 year</h5>
-                    </div>
-                    <div class="uiverse col-6">
-                        <span class="tooltip">Adobe Photoshop</span>
-                        <span>
-                            <img src="images/photoshop-cc-logo-svgrepo-com.svg"class="m-3"  height="100" width="100">
-                            <div class="star-1">
-                                <svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 784.11 815.53" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><defs></defs><g id="Layer_x0020_1"><metadata id="CorelCorpID_0Corel-Layer"></metadata><path d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z" class="fil0"></path></g></svg>
-                                </div>
-                                <div class="star-2">
-                                <svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 784.11 815.53" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><defs></defs><g id="Layer_x0020_1"><metadata id="CorelCorpID_0Corel-Layer"></metadata><path d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z" class="fil0"></path></g></svg>
-                                </div>
-                                <div class="star-3">
-                                <svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 784.11 815.53" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><defs></defs><g id="Layer_x0020_1"><metadata id="CorelCorpID_0Corel-Layer"></metadata><path d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z" class="fil0"></path></g></svg>
-                                </div>
-                                <div class="star-4">
-                                <svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 784.11 815.53" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><defs></defs><g id="Layer_x0020_1"><metadata id="CorelCorpID_0Corel-Layer"></metadata><path d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z" class="fil0"></path></g></svg>
-                                </div>
-                                <div class="star-5">
-                                <svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 784.11 815.53" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><defs></defs><g id="Layer_x0020_1"><metadata id="CorelCorpID_0Corel-Layer"></metadata><path d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z" class="fil0"></path></g></svg>
-                                </div>
-                                <div class="star-6">
-                                <svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 784.11 815.53" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><defs></defs><g id="Layer_x0020_1"><metadata id="CorelCorpID_0Corel-Layer"></metadata><path d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z" class="fil0"></path></g></svg>
-                                </div>
-                        </span><h5 style="color:white;">6 years</h5>
-                    </div>
-                    <div class="uiverse col-6">
-                        <span class="tooltip">Filmora</span>
-                        <span>
-                            <img src="images/icons8-filmora.svg"class="m-3"  height="100" width="100">
-                            <div class="star-1">
-                                <svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 784.11 815.53" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><defs></defs><g id="Layer_x0020_1"><metadata id="CorelCorpID_0Corel-Layer"></metadata><path d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z" class="fil0"></path></g></svg>
-                                </div>
-                                <div class="star-2">
-                                <svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 784.11 815.53" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><defs></defs><g id="Layer_x0020_1"><metadata id="CorelCorpID_0Corel-Layer"></metadata><path d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z" class="fil0"></path></g></svg>
-                                </div>
-                                <div class="star-3">
-                                <svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 784.11 815.53" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><defs></defs><g id="Layer_x0020_1"><metadata id="CorelCorpID_0Corel-Layer"></metadata><path d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z" class="fil0"></path></g></svg>
-                                </div>
-                                <div class="star-4">
-                                <svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 784.11 815.53" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><defs></defs><g id="Layer_x0020_1"><metadata id="CorelCorpID_0Corel-Layer"></metadata><path d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z" class="fil0"></path></g></svg>
-                                </div>
-                                <div class="star-5">
-                                <svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 784.11 815.53" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><defs></defs><g id="Layer_x0020_1"><metadata id="CorelCorpID_0Corel-Layer"></metadata><path d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z" class="fil0"></path></g></svg>
-                                </div>
-                                <div class="star-6">
-                                <svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 784.11 815.53" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><defs></defs><g id="Layer_x0020_1"><metadata id="CorelCorpID_0Corel-Layer"></metadata><path d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z" class="fil0"></path></g></svg>
-                                </div>
-                        </span><h5 style="color:white;">4 years</h5>
-                    </div>
-                </div>
-                
-                
-            </div>
-            
+<nav class="navbar navbar-expand-lg navbar-light " style="background-color: #6C757D">
+    <div class="container-fluid d-flex flex-column justify-content-center">
+        <button
+        class="navbar-toggler"
+        type="button"
+        data-mdb-toggle="collapse"
+        data-mdb-target="#navbarTogglerDemo03"
+        aria-controls="navbarTogglerDemo03"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+        >
+        <i class="fas fa-bars"></i>
+        </button>
+        {{-- <a class="navbar-brand" href="#">Navbar</a> --}}
+        <div class="collapse navbar-collapse d-flex flex-column justify-content-center" id="navbarTogglerDemo03">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#projects">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about-me">About Me</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#skills">Skills</a >
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#certifications">Certifications</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#resume">Resume</a >
+                </li>
+            </ul>
         </div>
     </div>
-    </body>
+</nav>
+
+<div class="container ">
+    <div data-aos="fade-right" id="home" class="mt-5 animate__animated animate__pulse animate__repeat-2" >
+        <h1>My Portfolio</h1>
+    </div>
+    <div  class="height home d-flex flex-column justify-content-center">
+        <div class="m-5 d-flex align-items-start justify-content-around">
+            
+            <div class="m-5 ">
+                <h1>Haii,</h1>
+                <h2>I am Chezter Custodio
+                    a Web Developer. <br>
+                    I created this site for my portfolio. 
+                </h2>
+                <button class="contact" id="email">
+                    <div class="svg-wrapper-1">
+                        <div class="svg-wrapper">
+                            <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 0h24v24H0z" fill="none"></path>
+                            <path d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z" fill="currentColor"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <span>Email Me</span>
+                </button>
+                
+                <a href="https://www.linkedin.com/in/chezter-custodio-b02a1b220/" target="_blank" class="linkedin">
+                    <img src="{{asset('images/linkedin.svg')}}" alt="" class="img-fluid" width="100" height="100">
+                </a>
+            </div>
+            <div class="circle">
+                <img src="{{asset('images/meh.jpg')}}" alt="" class="img-fluid home-img" width="350" height="350"/>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div data-aos="fade-right" id="projects" class="" >
+        <h1>Projects</h1>
+    </div>
+    <div data-aos="fade-up"  class="projects mt-5 height ">
+        <div class="swiper mySwiper d-flex">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="card">
+                        <div class="card-image"><img src="{{asset('images/AnimeList.png')}}" alt="" class="img-fluid" ></div>
+                        <div class="title d-flex justify-content-center"> MY ANIMELIST </div>
+                        <div class="category"> Skills used </div>
+                        <div class="heading"> Laravel, HTML, CSS, JavaScript, PHP, Bootstrap</div>
+                        {{-- <div class="author"> By <span class="name">Abi</span> 4 days ago</div> --}}
+                        <div class="d-flex justify-content-center">
+                            <button class="btn m-1 preview modal-button" id="" href="#myModal1">
+                                    Preview
+                            </button>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card">
+                        <div class="card-image d-flex justify-content-center align-items-center"><img src="{{asset('images/BuyNSellLogo.png')}}" alt="" class="img-fluid "></div>
+                        <div class="title d-flex justify-content-center"> Buy n' Sell </div>
+                        <div class="category"> Skills used </div>
+                        <div class="heading"> Laravel, HTML, CSS, JavaScript, Bootstrap, GIT </div>
+                        <div class="d-flex justify-content-center">
+                            <button class="btn m-1 preview modal-button" id="" href="#myModal2">
+                                    Preview
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card">
+                        <div class="card-image d-flex justify-content-center align-items-center"><img src="{{asset('images/.png')}}" alt="" class="img-fluid"></div>
+                        <div class="title d-flex justify-content-center"> Runnit</div>
+                        <div class="category"> Skills used </div>
+                        <div class="heading"> Laravel, HTML, CSS, JavaScript, Bootstrap, GIT </div>
+                        <div class="d-flex justify-content-center">
+                            <button class="btn m-1 preview modal-button" id="" href="#myModal3">
+                                    Preview
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card">
+                        <div class="card-image"><img src="{{asset('images/ral_logo.png')}}" alt="" class="img-fluid"></div>
+                        <div class="title d-flex justify-content-center align-items-center"> Rent-a-live </div>
+                        <div class="category"> Skills used </div>
+                        <div class="heading"> Laravel, HTML, CSS, JavaScript, PHP, Bootstrap </div>
+                        <div class="d-flex justify-content-center">
+                            <button class="btn m-1 preview modal-button" id="" href="#myModal4">
+                                    Preview
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card">
+                        <div class="card-image d-flex justify-content-center align-items-center"><img src="{{asset('images/INVISIBI.png')}}" alt="" class="img-fluid"></div>
+                        <div class="title d-flex justify-content-center"> INVISIBLE </div>
+                        <div class="category"> Skills used </div>
+                        <div class="heading"> CodeIgniter, HTML, CSS, JavaScript, PHP, Bootstrap </div>
+                        <div class="d-flex justify-content-center">
+                            <button class="btn m-1 preview modal-button" id="" href="#myModal5">
+                                    Preview
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card">
+                        <div class="card-image d-flex justify-content-center align-items-center"><img src="{{asset('images/peteat_logo.png')}}" alt="" class="img-fluid"></div>
+                        <div class="title d-flex justify-content-center"> peTEAt: MilkTea Website </div>
+                        <div class="category"> Skills used </div>
+                        <div class="heading"> HTML, CSS, JavaScript, PHP, Bootstrap </div>
+                        <div class="d-flex justify-content-center">
+                            <button class="btn m-1 preview modal-button" id="" href="#myModal6">
+                                    Preview
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card">
+                        <div class="card-image"><img src="{{asset('images/flix_logo.png')}}" alt="" class="img-fluid"></div>
+                        <div class="title d-flex justify-content-center"> FLIX </div>
+                        <div class="category"> Skills used </div>
+                        <div class="heading"> Kotlin, Android Studio, Firebase </div>
+                        <div class="d-flex justify-content-center">
+                            <button class="btn m-1 preview modal-button" id="" href="#myModal7">
+                                    Preview
+                            </button>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+
+
+
+
+    <div data-aos="fade-right" id="about-me" >
+        <h1>About Me</h1>
+    </div>
+    <div data-aos="fade-up" id="" class="height home ">
+        <div class="m-5 d-flex align-items-start justify-content-around">
+            <img src="{{asset('images/creative_shot.jpg')}}" alt="" class="img-fluid" width="250" height="250">
+            <div class="d-flex flex-column m-5">
+                <h3>I am 23 years old fresh graduate from FEU Institute of Technology. I came from Pasig City and moved to Muntinlupa at 2018.
+                I started programming on 2017, I just want to explore it and it became my interest and thats how my career started as a Web Developer.
+                My hobbies are watching anime, playing online games, drawing.</h3>
+            </div>
+        </div>
+    </div>
+    
+    <div data-aos="fade-right" id="skills" >
+        <h1>Skills</h1>
+    </div>
+    <div data-aos="fade-up" id="" class=" height skills ">
+        <div class="m-5 row d-flex ">
+            <div class="container col-md ">
+                <h1>Front End Development</h1>
+                <div class="d-flex flex-wrap justify-content-center">
+                    <div>
+                        <img src="{{asset('images/skills/css3_logo.svg')}}" alt="" class="img-fluid" >
+                        <h4>5 yrs</h4>
+                    </div>
+                    <div>
+                        <img src="{{asset('images/skills/html5_logo.svg')}}" alt="" class="img-fluid" >
+                        <h4>5yrs</h4>
+                    </div>
+                    <div>
+                        <img src="{{asset('images/skills/javascript_logo.svg')}}" alt="" class="img-fluid" >
+                        <h4>3 yrs</h4>
+                    </div>
+                    <div>
+                        <img src="{{asset('images/skills/bootstrap_logo.svg')}}" alt="" class="img-fluid" >
+                        <h4>5 yrs</h4>
+                    </div>
+                    <div>
+                        <img src="{{asset('images/skills/kotlin_logo.svg')}}" alt="" class="img-fluid" >
+                        <h4>&lt;1 yr</h4>
+                    </div>
+                    <div>
+                        <img src="{{asset('images/skills/swift_logo.svg')}}" alt="" class="img-fluid" >
+                        <h4>&lt;1 yr</h4>
+                    </div>
+                    
+                </div>
+                
+            </div>
+            <div class="container col-md">
+                <h1>Back End Development</h1>
+                <div class="d-flex flex-wrap justify-content-center">
+                    <div>
+                        <img src="{{asset('images/skills/php_logo.svg')}}" alt="" class="img-fluid" >
+                        <h4>2 yrs</h4>
+                    </div>
+                    <div>
+                        <img src="{{asset('images/skills/laravel_logo.svg')}}" alt="" class="img-fluid" >
+                        <h4>1 yr</h4>
+                    </div>
+                    <div>
+                        <img src="{{asset('images/skills/codeigniter_logo.svg')}}" alt="" class="img-fluid" >
+                        <h4>&lt;1 yr</h4>
+                    </div>
+                    <div>
+                        <img src="{{asset('images/skills/mysql_logo.svg')}}" alt="" class="img-fluid" >
+                        <h4>2 yrs</h4>
+                    </div>
+                    <div>
+                        <img src="{{asset('images/skills/firebase_logo.svg')}}" alt="" class="img-fluid" >
+                        <h4>&lt;1 yr</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="container col-md">
+                <h1>Other SKills</h1>
+                <div class="d-flex flex-wrap justify-content-center">
+                    <div>
+                        <img src="{{asset('images/skills/git_logo.svg')}}" alt="" class="img-fluid" >
+                        <h4>&lt;1 yr</h4>
+                    </div>
+                    <div>
+                        <img src="{{asset('images/skills/photoshop_logo.svg')}}" alt="" class="img-fluid" >
+                        <h4>2 yrs</h4>
+                    </div>
+                    <div>
+                        <img src="{{asset('images/skills/filmora_logo.svg')}}" alt="" class="img-fluid" >
+                        <h4>3 yrs</h4>
+                    </div>
+                    <div>
+                        <img src="{{asset('images/skills/figma_logo.svg')}}" alt="" class="img-fluid" >
+                        <h4>&lt;1 yr</h4>
+                    </div>
+                    <div>
+                        <img src="{{asset('images/skills/Android_Studio_logo.png')}}" alt="" class="img-fluid" >
+                        <h4>1 yr</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div data-aos="fade-right" id="certifications" >
+        <h1>Certifications</h1>
+    </div>
+    <div data-aos="fade-up" id="certifications" class="height certifications d-flex flex-column justify-content-center">
+        <div class="m-5 row d-flex ">
+            <div class="container col-md">
+                <div class="">
+                    <div>
+                        
+                        <a href="https://www.credly.com/badges/d12bbe86-ef2f-472b-b371-5d77c3acf68b/linked_in_profile" target="_blank">
+                            <img src="{{asset('images/certif/html5_certif.png')}}" alt="" class="img-fluid" >
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="container col-md">
+                <div class="">
+                    <div>
+                        <a href="https://www.credly.com/badges/3f36792f-9220-4010-8258-0e24eb0f2693/linked_in_profile" target="_blank">
+                            <img src="{{asset('images/certif/db_certif.png')}}" alt="" class="img-fluid" >
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="">
+        <div data-aos="fade-right" id="resume" >
+            <h1>Resume</h1>
+        </div>
+        <div data-aos="fade-up" id="" class=" Resume d-flex flex-column justify-content-center height">
+            <div class="m-5 d-flex align-items-start ">
+                <img src="{{asset('images/grad_pic.jpg')}}" alt="" class="img-fluid" width="250" height="250">
+                <div class="ms-5">
+                    <h3>Chezter Andrei L. Custodio</h3>
+                    <h3>BS Information Technology</h3>
+                    <h3>with Specialization in Web and Mobile Application</h3>
+                    
+                    <div class="button-container" >
+                        <div data-tooltip="Download" class="button">
+                            <div class="button-wrapper">
+                                <a href="docs/Custodio_Chezter_Andrei-Resume.pdf" download>
+                                <div class="text">Resume</div>
+                                <span class="icon">
+                                <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" height="1.5em" width="1.5em" role="img" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><path d="M12 15V3m0 12l-4-4m4 4l4-4M2 17l.621 2.485A2 2 0 0 0 4.561 21h14.878a2 2 0 0 0 1.94-1.515L22 17" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" fill="none"></path></svg>
+                                </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+                
+            </div>
+            <div class="">
+            <h1>Objective</h1>
+            <ul class="li">
+                <h5>To work in an active professional setting as a Web and Mobile programmer for a rising company, utilizing my creativity, cooperating skills, and inventive thinking for the benefit of both the company and myself. </h5>
+            </ul>
+            
+            <h1>Internship</h1>
+            <ul class="li">
+                <h5><b>IPSUM PH</b> (Front-End Developer) <br>
+                April 25 – July 20, 2022 (520hrs)
+                </h5>
+            </ul>
+            <ul class="li">
+                <h5><b>Melham Construction Corporation</b> (Front-End Developer) <br>
+                September 26 – Nov 16, 2022 (520hrs)
+                </h5>
+            </ul>
+
+            <h1> Education</h1>
+            <ul class="li">
+                <h5><b>FEU Institute of Technology</b><br>
+                P. Paredes St., Sampaloc, Manila<br>
+                2018-2023
+                </h5>
+            </ul>
+            <ul class="li">
+                <h5><b>FEU MANILA SHS</b><br>
+                Nicanor Reyes St., Sampaloc, Manila<br>
+                2016-2018
+                </h5>
+            </ul>
+
+            <h1>Personal Information </h1>
+            <ul class="li">
+                <table>
+                    <td>
+                        <tr>
+                            <th> <b>Address </b></th> 
+                            <th> &nbsp; : &nbsp; </th>
+                            <th> 122 C. F. Natividad Katarungan II Muntilupa City</th> 
+                        </tr>
+                        <tr>
+                            <th> <b>Mobile </b></th>
+                            <th> &nbsp; : &nbsp; </th> 
+                            <th> 09089349411</th> 
+                        </tr>
+                        <tr>
+                            <th> <b>E-mail </b></th> 
+                            <th> &nbsp; : &nbsp; </th>
+                            <th> chez.cus@gmail.com</th> 
+                        </tr>
+                        <tr>
+                            <th> <b>Birthday </b></th> 
+                            <th> &nbsp; : &nbsp; </th>
+                            <th> March 01, 2000</th> 
+                        </tr>
+                    </td>
+                </table>
+            </ul>
+            
+            
+        </div>
+        </div>
+        
+    </div>
+    <!-- The Modal -->
+<div id="myModal1" class="modal">
+<!-- Modal content -->
+    <div class="modal-content text-center">
+        <!--Header-->
+            <div class="modal-header d-flex justify-content-around">
+                <div class="img-cont">
+                        <img src="{{asset('images/AnimeList.png')}} " alt="" class="img-fluid" width="250" height="250" >
+                    </div>
+                <p class="heading">
+                    <h4>My Animelist</h4>
+                    </p>
+                    <div type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                        {{-- <img src="{{ asset('images/close-circle-svgrepo-com.svg') }}" alt="" class="img-fluid" style="width:40px;"> --}}
+                        X
+                    </div>
+            </div>
+            
+            <!--Body-->
+            <div class="modal-body">
+                <i class="fas fa-spinner fa-spin"><img src="" alt="" class="img-fluid"></i>
+                <div class="swiper mySwiper2 d-flex">
+                    <div class="swiper-wrapper d-flex align-items-center">
+                        <div class="swiper-slide">
+                            <div class="container">
+                                <h3>
+                                    My Animelist is an Information Web Based Application that is created using Laravel, 
+                                    HTML5, CSS, SASS, Bootstrap, JavaScript.
+                                </h3>
+                            </div>
+                            
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="">
+                                <div class="card-image d-flex justify-content-center align-items-center"><img src="{{asset('images/modal/Screenshot_204.png')}}" alt="" class="img-fluid"></div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="">
+                                <div class="card-image d-flex justify-content-center align-items-center"><img src="{{asset('images/modal/Screenshot_205.png')}}" alt="" class="img-fluid"></div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="">
+                                <div class="card-image d-flex justify-content-center align-items-center"><img src="{{asset('images/modal/Screenshot_206.png')}}" alt="" class="img-fluid"></div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="">
+                                <div class="card-image d-flex justify-content-center align-items-center"><img src="{{asset('images/modal/Screenshot_219.png')}}" alt="" class="img-fluid"></div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="">
+                                <div class="card-image d-flex justify-content-center align-items-center"><img src="{{asset('images/modal/Screenshot_220.png')}}" alt="" class="img-fluid"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+</div>
+<!-- The Modal -->
+<div id="myModal2" class="modal">
+<!-- Modal content -->
+    <div class="modal-content text-center">
+        <!--Header-->
+            <div class="modal-header d-flex justify-content-between">
+                    <div class="img-cont">
+                        <img src="{{asset('images/BuyNSellLogo.png')}} " alt="" class="img-fluid" width="250" height="250" >
+                    </div>
+                <p class="heading ">
+                    <h4>Buy N' Sell</h4></p>
+                <div type="button" class="close d-flex float-end" data-bs-dismiss="modal" aria-label="Close">
+                    {{-- <img src="{{ asset('images/close-circle-svgrepo-com.svg') }}" alt="" class="img-fluid" style="width:40px;"> --}}
+                    X
+                </div>
+            </div>
+            
+            <!--Body-->
+            <div class="modal-body">
+                <i class="fas fa-spinner fa-spin"><img src="" alt="" class="img-fluid"></i>
+                <div class="swiper mySwiper2 d-flex">
+                    <div class="swiper-wrapper d-flex align-items-center">
+                        <div class="swiper-slide">
+                            <div class="container">
+                                <h3>
+                                    Buy N' Sell is an E-commerce Web Based Application that is created using Laravel, 
+                                    HTML5, CSS, SASS, Bootstrap, JavaScript.
+                                </h3>
+                            </div>
+                            
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="">
+                                <div class="card-image d-flex justify-content-center align-items-center"><img src="{{asset('images/modal/Screenshot_210.png')}}" alt="" class="img-fluid"></div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="">
+                                <div class="card-image d-flex justify-content-center align-items-center"><img src="{{asset('images/modal/Screenshot_211.png')}}" alt="" class="img-fluid"></div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="">
+                                <div class="card-image d-flex justify-content-center align-items-center"><img src="{{asset('images/modal/Screenshot_212.png')}}" alt="" class="img-fluid"></div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="">
+                                <div class="card-image d-flex justify-content-center align-items-center"><img src="{{asset('images/modal/Screenshot_213.png')}}" alt="" class="img-fluid"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+</div>
+<!-- The Modal -->
+<div id="myModal3" class="modal">
+<!-- Modal content -->
+        <div class="modal-content text-center">
+        <!--Header-->
+            <div class="modal-header d-flex justify-content-between">
+                    <div class="img-cont">
+                        <img src="{{asset('images/BuyNSellLogo.png')}} " alt="" class="img-fluid" width="250" height="250" >
+                    </div>
+                <p class="heading ">
+                    <h4>Runnit</h4></p>
+                <div type="button" class="close d-flex float-end" data-bs-dismiss="modal" aria-label="Close">
+                    {{-- <img src="{{ asset('images/close-circle-svgrepo-com.svg') }}" alt="" class="img-fluid" style="width:40px;"> --}}
+                    X
+                </div>
+            </div>
+            
+            <!--Body-->
+            <div class="modal-body">
+                <i class="fas fa-spinner fa-spin"><img src="" alt="" class="img-fluid"></i>
+                <div class="swiper mySwiper2 d-flex">
+                    <div class="swiper-wrapper d-flex align-items-center">
+                        <div class="swiper-slide">
+                            <div class="container">
+                                <h3>
+                                    Runnit is a Web Portal Based Application that is created using Laravel, 
+                                    HTML5, CSS, SASS, Bootstrap, JavaScript.
+                                </h3>
+                            </div>
+                            
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="">
+                                <div class="card-image d-flex justify-content-center align-items-center"><img src="{{asset('images/modal/Screenshot_214.png')}}" alt="" class="img-fluid"></div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="">
+                                <div class="card-image d-flex justify-content-center align-items-center"><img src="{{asset('images/modal/Screenshot_215.png')}}" alt="" class="img-fluid"></div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="">
+                                <div class="card-image d-flex justify-content-center align-items-center"><img src="{{asset('images/modal/Screenshot_216.png')}}" alt="" class="img-fluid"></div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="">
+                                <div class="card-image d-flex justify-content-center align-items-center"><img src="{{asset('images/modal/Screenshot_217.png')}}" alt="" class="img-fluid"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+</div>
+<!-- The Modal -->
+<div id="myModal4" class="modal">
+<!-- Modal content -->
+    <div class="modal-content text-center">
+        <!--Header-->
+            <div class="modal-header d-flex justify-content-between">
+                    <div class="img-cont">
+                        <img src="{{asset('images/r-a-l.png')}} " alt="" class="img-fluid" width="250" height="250" >
+                    </div>
+                <p class="heading ">
+                    <h4>Rent-A-Live</h4></p>
+                <div type="button" class="close d-flex float-end" data-bs-dismiss="modal" aria-label="Close">
+                    {{-- <img src="{{ asset('images/close-circle-svgrepo-com.svg') }}" alt="" class="img-fluid" style="width:40px;"> --}}
+                    X
+                </div>
+            </div>
+            
+            <!--Body-->
+            <div class="modal-body">
+                <i class="fas fa-spinner fa-spin"><img src="" alt="" class="img-fluid"></i>
+                <div class="swiper mySwiper2 d-flex">
+                    <div class="swiper-wrapper d-flex align-items-center">
+                        <div class="swiper-slide">
+                            <div class="container">
+                                <h3>
+                                    My Animelist is an Information Web Based Application that is created using Laravel, 
+                                    HTML5, CSS, SASS, Bootstrap, JavaScript.
+                                </h3>
+                            </div>
+                            
+                        </div>
+                        <div class="swiper-slide">
+                            <div class=" ">
+                                <div class="card-image d-flex justify-content-center align-items-center"><img src="{{asset('images/modal/Landing page web.jpg')}}" alt="" class="img-fluid"></div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class=" ">
+                                <div class="card-image d-flex justify-content-center align-items-center"><img src="{{asset('images/modal/Manage tenant.png')}}" alt="" class="img-fluid"></div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class=" ">
+                                <div class="card-image d-flex justify-content-center align-items-center"><img src="{{asset('images/modal/Message with your landlord.png')}}" alt="" class="img-fluid"></div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class=" ">
+                                <div class="card-image d-flex justify-content-center align-items-center"><img src="{{asset('images/modal/Payment.png')}}" alt="" class="img-fluid"></div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class=" ">
+                                <div class="card-image d-flex justify-content-center align-items-center"><img src="{{asset('images/modal/mobile 1.jpg')}}" alt="" class="" width="auto" height="775" ></div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class=" ">
+                                <div class="card-image d-flex justify-content-center align-items-center"><img src="{{asset('images/modal/mobile 2.jpg')}}" alt="" class="" width="auto" height="775" ></div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class=" ">
+                                <div class="card-image d-flex justify-content-center align-items-center"><img src="{{asset('images/modal/mobile 3.jpg')}}" alt="" class="" width="auto" height="775" ></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+</div>
+<!-- The Modal -->
+<div id="myModal5" class="modal">
+<!-- Modal content -->
+    <div class="modal-content text-center">
+        <!--Header-->
+            <div class="modal-header d-flex justify-content-between">
+                    <div class="img-cont">
+                        <img src="{{asset('images/INVISIBI.png')}} " alt="" class="img-fluid" width="250" height="250" >
+                    </div>
+                <p class="heading ">
+                    <h4>Invisible</h4></p>
+                <div type="button" class="close d-flex float-end" data-bs-dismiss="modal" aria-label="Close">
+                    {{-- <img src="{{ asset('images/close-circle-svgrepo-com.svg') }}" alt="" class="img-fluid" style="width:40px;"> --}}
+                    X
+                </div>
+            </div>
+            
+            <!--Body-->
+            <div class="modal-body">
+                <i class="fas fa-spinner fa-spin"><img src="" alt="" class="img-fluid"></i>
+                <div class="swiper mySwiper2 d-flex">
+                    <div class="swiper-wrapper d-flex align-items-center">
+                        <div class="swiper-slide">
+                            <div class="container">
+                                <h3>
+                                    INVISIBLE is a social media blog site similar to twitter and is created using CodeIgniter, HTML, CSS, PHP, JavaScript.
+                                </h3>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="">
+                                <div class="card-image d-flex justify-content-center align-items-center"><img src="{{asset('images/modal/Screenshot_218.png')}}" alt="" class="img-fluid"></div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="container">
+                                <h3>
+                                    Sorry, I can only preview the home page the php code are outdated because I updated my php version.
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+</div>
+<!-- The Modal -->
+<div id="myModal6" class="modal">
+<!-- Modal content -->
+    <div class="modal-content text-center">
+        <!--Header-->
+            <div class="modal-header d-flex justify-content-between">
+                    <div class="img-cont">
+                        <img src="{{asset('images/peteat_logo.png')}} " alt="" class="img-fluid" width="150" height="150" >
+                    </div>
+                <p class="heading "> 
+                    <h4>Peteat: Milktea Website</h4></p>
+                <div type="button" class="close d-flex float-end" data-bs-dismiss="modal" aria-label="Close">
+                    {{-- <img src="{{ asset('images/close-circle-svgrepo-com.svg') }}" alt="" class="img-fluid" style="width:40px;"> --}}
+                    X
+                </div>
+            </div>
+            
+            <!--Body-->
+            <div class="modal-body">
+                <i class="fas fa-spinner fa-spin"><img src="" alt="" class="img-fluid"></i>
+                <div class="swiper mySwiper2 d-flex">
+                    <div class="swiper-wrapper d-flex align-items-center">
+                        <div class="swiper-slide">
+                            <div class="container">
+                                <h3>
+                                    Runnit is a Web Portal Based Application that is created using Laravel, 
+                                    HTML5, CSS, SASS, Bootstrap, JavaScript.
+                                </h3>
+                            </div>
+                            
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="">
+                                <div class="card-image d-flex justify-content-center align-items-center"><img src="{{asset('images/modal/Screenshot_207.png')}}" alt="" class="img-fluid"></div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="">
+                                <div class="card-image d-flex justify-content-center align-items-center"><img src="{{asset('images/modal/Screenshot_208.png')}}" alt="" class="img-fluid"></div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="">
+                                <div class="card-image d-flex justify-content-center align-items-center"><img src="{{asset('images/modal/Screenshot_209.png')}}" alt="" class="img-fluid"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+        <!--/.Content-->
+    </div>
+</div>
+<!-- The Modal -->
+<div id="myModal7" class="modal">
+<!-- Modal content -->
+    <div class="modal-content text-center">
+    <!--Header-->
+        <div class="modal-header d-flex justify-content-between">
+                <div class="img-cont">
+                    <img src="{{asset('images/flix_logo.png')}} " alt="" class="img-fluid" width="250" height="250" >
+                </div>
+            <p class="heading ">
+                <h4>Flix</h4></p>
+            <div type="button" class="close d-flex float-end" data-bs-dismiss="modal" aria-label="Close">
+                {{-- <img src="{{ asset('images/close-circle-svgrepo-com.svg') }}" alt="" class="img-fluid" style="width:40px;"> --}}
+                X
+            </div>
+        </div>
+        
+        <!--Body-->
+        <div class="modal-body">
+            <i class="fas fa-spinner fa-spin"><img src="" alt="" class="img-fluid"></i>
+            <div class="swiper mySwiper2 d-flex">
+                <div class="swiper-wrapper d-flex align-items-center">
+                    <div class="swiper-slide">
+                        <div class="container">
+                            <h3>
+                                Flix is an automated mobile application for films with real-time updates created using Android Studio, Kotlin and Firebase.
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="">
+                            <div class="card-image d-flex justify-content-center align-items-center"><img src="{{asset('images/modal/flix_login.png')}}" alt="" class="img-fluid"></div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="">
+                            <div class="card-image d-flex justify-content-center align-items-center"><img src="{{asset('images/modal/flix_db.png')}}" alt="" class="img-fluid"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+</div>
+</div>
 
     <footer>
         <h6 class="mb-2 d-flex justify-content-center text-center align-items-center justify-content-center">Designed & Built by Chezter Custodio</h5>
@@ -1129,5 +1503,88 @@
             preloader.style.display = "none";
             })
     </script>
+    <script>
+        //swiper1
+    var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        breakpoints: {
+        //>=
+            800: {
+            slidesPerView:2,
+            spaceBetween: 20
+            },
+            1100: {
+            slidesPerView:3,
+            spaceBetween: 20
+            },
+            1280: {
+            slidesPerView: 4,
+            spaceBetween: 10
+            },
+            1500: {
+            slidesPerView: 5,
+            spaceBetween: 30
+            }
+        }
+    },);
+    
+    //swiper2
+    var swiper = new Swiper(".mySwiper2", {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+    },);
 
+    //email
+    $("#email").on('click', function() {
+        window.location.href = "mailto:chez.cus@gmail.com";
+        });
+    </script>
+
+
+<script>
+    // Get the button that opens the modal
+var btn = document.querySelectorAll("button.modal-button");
+
+// All page modals
+var modals = document.querySelectorAll('.modal');
+
+// Get the <span> element that closes the modal
+var spans = document.getElementsByClassName("close");
+
+// When the user clicks the button, open the modal
+for (var i = 0; i < btn.length; i++) {
+ btn[i].onclick = function(e) {
+    e.preventDefault();
+    modal = document.querySelector(e.target.getAttribute("href"));
+    modal.style.display = "block";
+ }
+}
+
+// When the user clicks on <span> (x), close the modal
+for (var i = 0; i < spans.length; i++) {
+ spans[i].onclick = function() {
+    for (var index in modals) {
+      if (typeof modals[index].style !== 'undefined') modals[index].style.display = "none";    
+    }
+ }
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target.classList.contains('modal')) {
+     for (var index in modals) {
+      if (typeof modals[index].style !== 'undefined') modals[index].style.display = "none";    
+     }
+    }
+}
+</script>
     </html>
